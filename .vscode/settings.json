@@ -1,0 +1,8 @@
+{
+    "editor.wordWrap": "on",
+    "workbench.preferredDarkColorTheme": "One Dark Pro Mix",
+    "workbench.preferredHighContrastColorTheme": "One Dark Pro Mix",
+    "terminal.integrated.shellIntegration.suggestEnabled": true,
+    "java.project.outputPath": "java_one_for_all\\bin",
+    "java.project.sourcePaths": ["java-one-for-all/src", "java_one_for_all/src"]
+}
