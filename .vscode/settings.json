@@ -4,5 +4,8 @@
     "workbench.preferredHighContrastColorTheme": "One Dark Pro Mix",
     "terminal.integrated.shellIntegration.suggestEnabled": true,
     "java.project.outputPath": "java_one_for_all\\bin",
-    "java.project.sourcePaths": ["java_one_for_all\\src"]
+    "java.project.sourcePaths": [
+        "How_to_Program_Java_Deitel/src",
+        "java_one_for_all/src/academy/devdojo/javaoneforall/introduction"
+    ]
 }

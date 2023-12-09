@@ -19,6 +19,12 @@ public class Class02PrimitiveTypes {
         long bigNumber = 1000000000;
         short ageShort = 31999;
         byte ageByte = -128; // this type (byte) accept values between -128 and 128(cut down 128 for this)
+        String name = "Leonardo"; // In String we use double quotes, in char we use single quotes
+        // String is not a primitive type (it is a reference type and a Class) but it is also so important 
+        //After Java 8 we can use this feature above to let the compiler found out what the type of variable
+        var lastName = "Bonifácio";
+        // we should be carefull about this features and your versions of release, because some job requires projects that we'll written
+        // in java 8 for example, that not have some features(like var) and this is a big problem to keep in mind
         char character1 = 87;
         char character2 = 'L';
         char character3 = '\u0041';
@@ -44,19 +50,22 @@ public class Class02PrimitiveTypes {
          * Every time that we can type a float number inside a variable, it will be by default a double
          */
         // Casting forces the computer storage values greater the type of variable, it's kind say to the computer "hey i know i'm doing i trust the behavior to become a integer"
+        // byte -> short -> char -> int -> long -> float -> double  (From left to right: Lower data type to Higher data type)
+        // double -> float -> long -> int -> char -> short -> byte  (From left to right: Higher data type to Lower data type)
         int castNumberIntLong = (int) 10000000000L;
         // When you casting you forcing the compiler to do something that it probably will cause you problems, for example don't output the same value that you put in your variable, because you are using way more space and way more bits that the type of the variable suport
-        System.out.print(castNumberIntLong);
+        //System.out.print(castNumberIntLong);
         float castNumberFloatDouble = (float) 2500.0D;
         // In cases in that values fit in the space of the variable, it's works properly
         // Only forces casting when you are sure about that, because things are not exactly the way you expect and you will get weird behaviors
         long castNumberDoubleLong = (long) 133.33; //the compiler go ignored the number after the dot, because i'm forcing he became a long number
-        System.out.print(castNumberDoubleLong);
-        System.out.print(castNumberFloatDouble);
-        System.out.println("The age is " + age + " years old");//Concatenation between String and variable
-        System.out.print(character1);
-        System.out.print(character2);
-        System.out.print(character3);
+        //System.out.print(castNumberDoubleLong);
+        //System.out.print(castNumberFloatDouble);
+        //System.out.println("The age is " + age + " years old");//Concatenation between String and variable
+        //System.out.print(character1);
+        //System.out.print(character2);
+        //System.out.print(character3);
+        System.out.println("Hi i'm " + name + " " + lastName); // Shortcut for Systemout.println is 'sout'
 
     }
 }
