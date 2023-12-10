@@ -68,7 +68,7 @@ public class Class02PrimitiveTypes {
         System.out.print(character1);
         System.out.print(character2);
         System.out.print(character3);
-        System.out.println("Hi i'm " + name + " " + lastName); // Shortcut for Systemout.println is 'sout'
+        System.out.println("Hi i'm " + name + " " + lastName); // Shortcut for System.out.println is 'sout'
 
     }
 }
