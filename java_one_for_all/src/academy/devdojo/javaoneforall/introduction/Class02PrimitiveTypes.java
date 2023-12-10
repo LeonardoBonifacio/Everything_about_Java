@@ -8,7 +8,7 @@ public class Class02PrimitiveTypes {
         // int, double, float, boolean, char, byte, short, long
         // First letter lowecase and capitalize every firts letter of each word in the name of variables
         // In Name of Class every first letter of word is capitalize
-        float salaryFloat = 2500.0F;
+        //float salaryFloat = 2500.0F;
         //To force java a understand which a number is float, put an 'F' in the end of the number
         //Because numbers with points are understandable by java how double and not float
         double salaryDouble = 500.0D; 
@@ -28,7 +28,10 @@ public class Class02PrimitiveTypes {
         char character1 = 87;
         char character2 = 'L';
         char character3 = '\u0041';
-        // this type(char) is special, because accept a number or  one letter in single quote, the number which we put represents a character in table ASCII (here http://www.cs.emory.edu/~cheung/Courses/170/Syllabus/05/char1.html), for example 87 is equal a 'W' or in table unicode table, where the value ever start with \U('u' in lowercase) after that put the number in the table unicode (here https://codestall.wordpress.com/2017/08/23/unicode-system-in-java/)
+        // this type(char) is special, because accept a number or  one letter in single quote, 
+        //the number which we put represents a character in table ASCII (here http://www.cs.emory.edu/~cheung/Courses/170/Syllabus/05/char1.html)
+        //for example 87 is equal a 'W' or in table unicode table, where the value ever start with \U('u' in lowercase) after that put the number
+        //in the table unicode (here https://codestall.wordpress.com/2017/08/23/unicode-system-in-java/).
         /*
          * Interager values (int, long, short, char)
          * Decimal values (double and float)
@@ -54,17 +57,17 @@ public class Class02PrimitiveTypes {
         // double -> float -> long -> int -> char -> short -> byte  (From left to right: Higher data type to Lower data type)
         int castNumberIntLong = (int) 10000000000L;
         // When you casting you forcing the compiler to do something that it probably will cause you problems, for example don't output the same value that you put in your variable, because you are using way more space and way more bits that the type of the variable suport
-        //System.out.print(castNumberIntLong);
+        System.out.print(castNumberIntLong);
         float castNumberFloatDouble = (float) 2500.0D;
         // In cases in that values fit in the space of the variable, it's works properly
         // Only forces casting when you are sure about that, because things are not exactly the way you expect and you will get weird behaviors
         long castNumberDoubleLong = (long) 133.33; //the compiler go ignored the number after the dot, because i'm forcing he became a long number
-        //System.out.print(castNumberDoubleLong);
-        //System.out.print(castNumberFloatDouble);
-        //System.out.println("The age is " + age + " years old");//Concatenation between String and variable
-        //System.out.print(character1);
-        //System.out.print(character2);
-        //System.out.print(character3);
+        System.out.print(castNumberDoubleLong);
+        System.out.print(castNumberFloatDouble);
+        System.out.println("The age is " + age + " years old");//Concatenation between String and variable
+        System.out.print(character1);
+        System.out.print(character2);
+        System.out.print(character3);
         System.out.println("Hi i'm " + name + " " + lastName); // Shortcut for Systemout.println is 'sout'
 
     }
