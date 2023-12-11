@@ -4,9 +4,14 @@ public class Class02PrimitiveTypes {
     // I can type 'psvm' so that i don't have that type the method main again and
     // again
     public static void main(String[] args) {
+        /*
         // Primitive Types
         // int, double, float, boolean, char, byte, short, long
-        // First letter lowecase and capitalize every firts letter of each word in the name of variables
+        // First letter lowecase and capitalize every firts letter of each word in the name of variables normals
+        // But in variables that never change(known by CONSTANTS) the follow sintax is required
+        // final double VALUE_OF_PI = 3.14;
+        // if we try to change the value storaged in a Constant, the compilator returns a error, because it's a CONSTANT which means 
+        // that it never might be change like a variable normal
         // In Name of Class every first letter of word is capitalize
         //float salaryFloat = 2500.0F;
         //To force java a understand which a number is float, put an 'F' in the end of the number
@@ -32,26 +37,24 @@ public class Class02PrimitiveTypes {
         //the number which we put represents a character in table ASCII (here http://www.cs.emory.edu/~cheung/Courses/170/Syllabus/05/char1.html)
         //for example 87 is equal a 'W' or in table unicode table, where the value ever start with \U('u' in lowercase) after that put the number
         //in the table unicode (here https://codestall.wordpress.com/2017/08/23/unicode-system-in-java/).
-        /*
-         * Interager values (int, long, short, char)
-         * Decimal values (double and float)
-         * Each type of the variable have own limits of storage, there are a table that explain this is
-         * in internet(here http://www.itwhistle.com/data-types-in-java/)
-         * In nutshel all the primitive types storage(sometimes hidden) numbers and what's the matter is the size of the values which each primitive
-         * type storage(bytes), use the right type so that you can storage an correct quantity of the whatever you system put in your variables
-         * Every time we crate a variable with determinate primitive type we are kind put a limit of values which can be storage in these variable
-         * byte = 1 byte
-         * short = 2 bytes
-         * int = 4 bytes
-         * long = 8 bytes
-         * float = 4 bytes
-         * double = 8 bytes
-         * boolean = 1 bit
-         * char = 2 bytes
-         * That meams that there is a limit of numbers that you can put inside and if you try to put more numbers then it's allowed you will get a compilation error
-         * Every time that we can type a  int number inside a variable, it will be by default a int, except the number type byte
-         * Every time that we can type a float number inside a variable, it will be by default a double
-         */
+        // Interager values (int, long, short, char)
+        // Decimal values (double and float)
+        // Each type of the variable have own limits of storage, there are a table that explain this is
+        // in internet(here http://www.itwhistle.com/data-types-in-java/)
+        // In nutshel all the primitive types storage(sometimes hidden) numbers and what's the matter is the size of the values which each primitive
+        // type storage(bytes), use the right type so that you can storage an correct quantity of the whatever you system put in your variables
+        // Every time we crate a variable with determinate primitive type we are kind put a limit of values which can be storage in these variable
+        // byte = 1 byte
+        // short = 2 bytes
+        // int = 4 bytes
+        // long = 8 bytes
+        // float = 4 bytes
+        // double = 8 bytes
+        // boolean = 1 bit
+        // char = 2 bytes
+        // That meams that there is a limit of numbers that you can put inside and if you try to put more numbers then it's allowed you will get a compilation error
+        // Every time that we can type a  int number inside a variable, it will be by default a int, except the number type byte
+        // Every time that we can type a float number inside a variable, it will be by default a double
         // Casting forces the computer storage values greater the type of variable, it's kind say to the computer "hey i know i'm doing i trust the behavior to become a integer"
         // byte -> short -> char -> int -> long -> float -> double  (From left to right: Lower data type to Higher data type)
         // double -> float -> long -> int -> char -> short -> byte  (From left to right: Higher data type to Lower data type)
@@ -69,6 +72,7 @@ public class Class02PrimitiveTypes {
         System.out.print(character2);
         System.out.print(character3);
         System.out.println("Hi i'm " + name + " " + lastName); // Shortcut for Systemout.println is 'sout'
+        */
 
     }
 }
