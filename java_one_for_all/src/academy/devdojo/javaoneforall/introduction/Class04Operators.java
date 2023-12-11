@@ -49,7 +49,14 @@ public class Class04Operators {
 
 
         /*
-        // Logical operators -> (&& -> AND    || -> OR    ! -> NOT) Keep in mind the truth table
+        // Logical operators -> (&& -> AND    || -> OR    ! -> NOT) 
+            Truth table for &&                Truth table for ||
+
+            true && true = true               true || true = true
+            true && false = false             true || false == true
+            false && true == false            false || true == true
+            false && false = false            false || false == false
+            
         int age = 29;
         float salary = 3500F;
         boolean isLegalOlderThanThirty = age >= 30 && salary >= 4612F; // AND
