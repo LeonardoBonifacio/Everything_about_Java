@@ -13,8 +13,8 @@ public class Class02PrimitiveTypes {
         // if we try to change the value storaged in a Constant, the compilator returns a error, because it's a CONSTANT which means 
         // that it never might be change like a variable normal
         // In Name of Class every first letter of word is capitalize
-        //float salaryFloat = 2500.0F;
-        //To force java a understand which a number is float, put an 'F' in the end of the number
+        // float salaryFloat = 2500.0F;
+        // To force java a understand which a number is float, put an 'F' in the end of the number
         //Because numbers with points are understandable by java how double and not float
         double salaryDouble = 500.0D; 
         // if you want you can put a D in the end of the double number either, but it doesn't even matter

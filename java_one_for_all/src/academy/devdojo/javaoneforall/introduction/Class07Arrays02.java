@@ -26,7 +26,7 @@ public class Class07Arrays02 {
         */
 
         String[] names = new String[10];// names is reference variable(in this case array), and there are some methods within those
-                                      // reference variables(and in much more type of Things, like class or types)
+                                      // reference variables(and in much more type of Things, like class)
         // you cannot change the size of the an array once it is created, you have to created a new array
         // like this ( names = new String[10]; ) this is overwrite the array which already exist
         // now the reference names is going to point to this new space in memory

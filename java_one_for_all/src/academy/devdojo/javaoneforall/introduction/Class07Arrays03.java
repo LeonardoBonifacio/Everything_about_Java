@@ -10,12 +10,12 @@ public class Class07Arrays03 {
         // way number 3 creating an array
         int[] numbers3 = new int[]{10, 11, 12, 13, 14};// this way you cannot have the size of the array write inside the [], because you are assigned the values
         // can iterating over the array like this
-        for (int i = 0; i < numbers3.length; i++) {// if you the index, use this for
+        for (int i = 0; i < numbers3.length; i++) {// if you want use the index, use this for
             System.out.println(numbers3[i]);
         }
         // we can also iterating over the array like this(with for each), if you need only iterating over an array use this for
         for (int i : numbers3) {// just like for each number in numbers3
-            // in for each we don't have to do the bussines logic, basically the for each will know the size of the array for us an behind the scenes 
+            // in for each we don't have to do the bussines logic, basically the for each will known the size of the array for us an behind the scenes 
             // it will just go over everything
             /* This is what's happening inside this for each
              * int num = numbers3[0];
