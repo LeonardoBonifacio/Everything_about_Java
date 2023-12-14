@@ -15,7 +15,7 @@ public class CarTest01 {
         car02.model = "Fiat";
         car02.year = 2018;
 
-        car01 = car02;// this line means my reference variable car01 is going to have the same reference which car02 is having
+        car01 = car02;// this line means my reference variable car01 is going to have the same reference(the same values storaged) which car02 is having
                       // and the object car01 is lost in memory, there's no way to get back at this object
                       // this can only be done in objects created by the same class or objects which are the same thing
                       // thus this line will raise an compilation error car02 = professor;

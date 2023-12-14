@@ -2,7 +2,7 @@ package academy.devdojo.javaoneforall.javacore.Aintroductionclasses.domain;
 
 public class Student {// Create our class Student
     //Set the atributes(characteristics) of this class
-    public String name = "Zoro";
+    public String name;
     public int age;
     public char gender;
     // isn't a good pratice already define the values inside the atributes this class
