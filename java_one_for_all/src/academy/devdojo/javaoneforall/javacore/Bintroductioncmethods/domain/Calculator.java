@@ -44,4 +44,23 @@ public class Calculator {
         System.out.println("Num 1: " + nbr1);
         System.out.println("Num 2: " + nbr2);
     }
+
+    public void sumArray(int[] numbers){
+        int sum = 0;
+        for (int number : numbers) {
+            sum += number;
+        }
+        System.out.println("The sum of the array is : " + sum);
+    }
+
+    public void sumVarArgs(double value, int...numbers){// syntax of varArgs it's basically this three points after the type of the variable
+                                          // you cannot have two varArgs becuase how  would java knows when to stop and start in the next one
+                                          // if you want to have multiple paramets they must be come before the varArgs parameters
+                                          // like this (String date, int age, int...numbers)
+        int sum = 0;
+        for (int number : numbers) {
+            sum += number;
+        }
+        System.out.println("The sum of the array is : " + sum);
+    }
 }
