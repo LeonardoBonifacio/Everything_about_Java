@@ -12,19 +12,21 @@ public class Account {
         }
     }
 
-    public void displayNameAndAccount(Account account, int initialOrFinal){
-        if (initialOrFinal == 1) {// display the initial values
-            System.out.println("Initial name is " + account.getName());
-            System.out.println("Initial balance is " + account.getBalance());
-        }
-        else if (initialOrFinal == 2) {// display the final values
-            System.out.println(account.getName() + " Balance: " + account.getBalance());
-        }
-    }
-
+    
     public void deposit(double depositAmount){
         if (depositAmount > 0.0) {
             this.balance += depositAmount;
+        }
+    }
+    
+    public void withdraw(double withdrawMoney){
+        if (withdrawMoney > this.balance) {
+            System.out.println("Withdrawal amount exceeded account balance ");
+        }
+        else{
+            System.out.println("The balance account before the withdraw is: " + this.balance);
+            this.balance -= withdrawMoney;
+            System.out.println("The new balance account after the withdraw is: " + this.balance);
         }
     }
 
@@ -36,8 +38,8 @@ public class Account {
     public void setName(String name){
         this.name = name;
     }
-
-
+    
+    
     public String getName(){
         return name;
     }
