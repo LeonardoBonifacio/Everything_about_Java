@@ -1,4 +1,4 @@
-package Exercises.POO.Class01;
+package Exercises.POO.Class03;
 
 public class EmployeeTest {
     public static void main(String[] args) {

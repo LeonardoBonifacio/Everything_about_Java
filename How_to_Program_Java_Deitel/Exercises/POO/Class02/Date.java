@@ -1,4 +1,4 @@
-package Exercises.POO.Class01;
+package Exercises.POO.Class02;
 
 public class Date {
     private int month;
