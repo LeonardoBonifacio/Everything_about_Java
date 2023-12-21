@@ -19,5 +19,6 @@ public class ConcatenationTest{
 
         concatenation = "1" + (1 + 1 + 1);
         System.out.println(concatenation);
+        
     }
 }
