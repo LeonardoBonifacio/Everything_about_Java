@@ -11,11 +11,13 @@ public class PlayerTest03 {
         Player[] players = {player1, player2};
 
         team.setPlayers(players);
+
         player1.setTeam(team);
         player2.setTeam(team);
 
         System.out.println("------ Player --------");
-        player.print();
+        player1.print();
+        player2.print();
 
         System.out.println("------ Team --------");
         team.print();

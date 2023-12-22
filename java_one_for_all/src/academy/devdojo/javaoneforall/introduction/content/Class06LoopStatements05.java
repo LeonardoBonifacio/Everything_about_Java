@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction;
+package academy.devdojo.javaoneforall.introduction.content;
 
 public class Class06LoopStatements05 {
         /*

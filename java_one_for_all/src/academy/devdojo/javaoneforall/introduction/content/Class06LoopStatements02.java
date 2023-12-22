@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction;
+package academy.devdojo.javaoneforall.introduction.content;
 
 public class Class06LoopStatements02 {
     // print all even numbers from 0 to 1000000

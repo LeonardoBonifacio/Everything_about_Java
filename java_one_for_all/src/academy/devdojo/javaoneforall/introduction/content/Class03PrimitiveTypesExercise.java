@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction;
+package academy.devdojo.javaoneforall.introduction.content;
 /*
 Create variables for the fields described bellow between <> and print the following message: 
 

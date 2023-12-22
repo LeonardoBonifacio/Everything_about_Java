@@ -2,13 +2,13 @@ package academy.devdojo.javaoneforall.javacore.Gassociation.domain;
 
 public class School {
     private String name;
-    Professor[] professors;
+    Professor01[] professors;
 
     public School(String name){
         this.name = name;
     }
 
-    public School(String name, Professor[] professors){
+    public School(String name, Professor01[] professors){
         this.name = name;
         this.professors = professors;
     }
@@ -16,7 +16,7 @@ public class School {
     public void print(){
         System.out.println(this.name);
         if (professors != null) {
-            for (Professor professor : professors) {
+            for (Professor01 professor : professors) {
                 System.out.println(professor.getName());
             }
         }
@@ -26,7 +26,7 @@ public class School {
         return this.name;
     }
 
-    public Professor[] getProfessors() {
+    public Professor01[] getProfessors() {
         return this.professors;
     }
 
@@ -34,7 +34,7 @@ public class School {
         this.name = name;
     }
     
-    public void setProfessors(Professor[] professors) {
+    public void setProfessors(Professor01[] professors) {
         this.professors = professors;
     }
 }

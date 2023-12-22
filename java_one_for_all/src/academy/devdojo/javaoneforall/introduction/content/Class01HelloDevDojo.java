@@ -1,5 +1,5 @@
 // First thing that we put in file.java is your package path, but we can put comments before package's path
-package academy.devdojo.javaoneforall.introduction;
+package academy.devdojo.javaoneforall.introduction.content;
 
 /**
  * This is the class HelloDevDojo and this is javadoc style comment

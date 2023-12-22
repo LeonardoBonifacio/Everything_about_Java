@@ -1,11 +1,11 @@
 package academy.devdojo.javaoneforall.javacore.Gassociation.domain;
 
-public class Professor {
+public class Professor01 {
     private String name;
 
 
 
-    public Professor(String name){
+    public Professor01(String name){
         this.name = name;
     }
 

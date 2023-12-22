@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction;
+package academy.devdojo.javaoneforall.introduction.content;
 
 public class Class05ConditionalStatements06 {
     // Using switch, print if the day is bussines day or weekend
