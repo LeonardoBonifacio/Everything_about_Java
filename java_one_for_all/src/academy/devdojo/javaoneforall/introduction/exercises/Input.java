@@ -1,4 +1,4 @@
-package Exercises.Strings;
+package academy.devdojo.javaoneforall.introduction.exercises;
 
 import java.util.Scanner;
 public class Input{

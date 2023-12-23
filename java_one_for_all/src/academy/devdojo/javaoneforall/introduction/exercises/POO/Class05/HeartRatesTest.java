@@ -1,4 +1,4 @@
-package Exercises.POO.Class05;
+package academy.devdojo.javaoneforall.introduction.exercises.POO.Class05;
 
 public class HeartRatesTest {
     public static void main(String[] args) {

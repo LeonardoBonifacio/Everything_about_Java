@@ -1,4 +1,4 @@
-package Exercises.POO.Class06;
+package academy.devdojo.javaoneforall.introduction.exercises.POO.Class06;
 
 public class HeartProfileTest {
     public static void main(String[] args) {

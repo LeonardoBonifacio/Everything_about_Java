@@ -1,4 +1,4 @@
-package Exercises.Math;
+package academy.devdojo.javaoneforall.introduction.exercises;
 
 public class TableOfSquaresAnCubes {
     public static void main(String[] args) {

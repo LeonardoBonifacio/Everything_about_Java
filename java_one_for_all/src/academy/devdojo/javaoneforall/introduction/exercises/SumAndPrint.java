@@ -1,4 +1,4 @@
-package Exercises.Conditionals;
+package academy.devdojo.javaoneforall.introduction.exercises;
 public class SumAndPrint {
     public static void main(String[] args) {
         int count = 1;

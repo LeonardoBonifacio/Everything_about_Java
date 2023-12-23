@@ -1,4 +1,4 @@
-package Exercises.POO.Class07;
+package academy.devdojo.javaoneforall.introduction.exercises.POO.Class07;
 
 public class StudentTest {
    public static void main(String[] args) {

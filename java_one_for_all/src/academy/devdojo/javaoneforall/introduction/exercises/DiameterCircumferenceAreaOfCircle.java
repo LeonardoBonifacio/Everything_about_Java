@@ -1,4 +1,4 @@
-package Exercises.Math;
+package academy.devdojo.javaoneforall.introduction.exercises;
 
 import java.lang.Math;
 import java.util.Scanner;

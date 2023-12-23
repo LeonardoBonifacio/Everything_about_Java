@@ -1,4 +1,4 @@
-package Exercises.POO.Class01;
+package academy.devdojo.javaoneforall.introduction.exercises.POO.Class01;
 
 
 public class AccountTest {

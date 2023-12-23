@@ -1,4 +1,4 @@
-package Exercises.Strings;
+package academy.devdojo.javaoneforall.introduction.exercises;
 
 public class Shapes {
     public static void main(String[] args) {

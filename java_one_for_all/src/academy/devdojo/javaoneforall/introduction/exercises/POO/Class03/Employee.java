@@ -1,4 +1,4 @@
-package Exercises.POO.Class03;
+package academy.devdojo.javaoneforall.introduction.exercises.POO.Class03;
 
 public class Employee {
     String firstName;

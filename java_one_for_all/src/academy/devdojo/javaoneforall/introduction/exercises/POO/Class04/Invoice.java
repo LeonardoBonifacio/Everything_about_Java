@@ -1,4 +1,4 @@
-package Exercises.POO.Class04;
+package academy.devdojo.javaoneforall.introduction.exercises.POO.Class04;
 
 public class Invoice {
     private String partNumber;
