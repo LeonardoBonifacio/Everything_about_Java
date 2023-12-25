@@ -19,7 +19,7 @@ public class Student {
         System.out.println("Name of this student is:" + this.name);
         System.out.println("Age of this student is: " + this.age);
         if (this.seminar != null) {
-            System.out.println("The seminar which this student's watching is: " + this.seminar) ;
+            System.out.println("The seminar which this student's watching is: " + this.seminar.getTitle()) ;
         }
     }
 
