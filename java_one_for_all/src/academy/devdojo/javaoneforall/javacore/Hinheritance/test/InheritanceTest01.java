@@ -31,7 +31,7 @@ public class InheritanceTest01 {
         manager.print();
 
         // as every class has Class object as Super class, in each object already exists methods
-        // which implement the methods of this class.Like equals(), wait() and getClass()
+        // which implement the methods of this class. Like equals(), wait() and getClass()
 
 
 

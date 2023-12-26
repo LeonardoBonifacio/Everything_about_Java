@@ -6,7 +6,7 @@ public class Manager extends Employee {
     // when we do this(extends) we are saying that manager has everything
     // that the employee have because it is a employee
     // so all the attributes and all the methods are being
-    // inherited, manager is everything that employee is and somthing more
+    // inherited, manager is everything that employee is and something more
     private String department;
 
 
