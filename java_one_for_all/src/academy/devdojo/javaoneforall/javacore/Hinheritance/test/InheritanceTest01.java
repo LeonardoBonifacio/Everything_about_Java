@@ -15,12 +15,13 @@ public class InheritanceTest01 {
         employee.setSalary(12000);
         employee.setAddress(address);
         employee.print();
-        // i cannot access more even the attributes in a public way of this object(employee)
+        // i cannot access more even the attributes in a public way of this
+        // object(employee)
         // like this employee.name
         // because the attributes are proctected
         // which means that only sub class and class in the same package can do this
         // for access the attributes now it's necesary use the getter and setter methods
-        
+
         System.out.println("-------------------------------");
 
         Manager manager = new Manager("Naruto");
@@ -30,11 +31,10 @@ public class InheritanceTest01 {
         manager.setDepartment("IT");
         manager.print();
 
-        // as every class has Class object as Super class, in each object already exists methods
-        // which implement the methods of this class. Like equals(), wait() and getClass()
+        // as every class has Class object as Super class, in each object already exists
+        // methods
+        // which implement the methods of this class. Like equals(), wait() and
+        // getClass() and toString()...
 
-
-
-        
     }
 }

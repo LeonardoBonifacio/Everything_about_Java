@@ -5,21 +5,25 @@ public class Anime {
     private String type;
     private int episodes;
     private String status;
-    
-    public void init(String name, String type,int episodes){// creating a method constructor or initializer
+
+    public void init(String name, String type, int episodes) {
+        // creating a method that act like a constructor
         this.name = name;
         this.type = type;
         this.episodes = episodes;
     }
-    // overloading in java follow this rules you need have exactly the same name letter by letter in this case 'init' and 'init'
-    // but the parameters they need to follow one of these two rules either they have different types or they have different quantity of
+
+    // overloading in java follow this rules you need have exactly the same name
+    // letter by letter in this case 'init' and 'init'
+    // but the parameters they need to follow one of these two rules either they
+    // have different types or they have different quantity of
     // parameters, in this case 'init' we have one with three and other with four
-    public void init(String name, String type, String status, int episodes){// creating a method constructor or initializer
+    public void init(String name, String type, String status, int episodes) {
         this.init(name, type, episodes);
         this.status = status;
     }
 
-    public void print(){
+    public void print() {
         System.out.println("This Anime name is: " + this.name);
         System.out.println("This Anime type is: " + this.type);
         System.out.println("This Anime episode is: " + this.episodes);
@@ -30,11 +34,11 @@ public class Anime {
         this.name = name;
     }
 
-    public void setType(String type){
+    public void setType(String type) {
         this.type = type;
     }
 
-    public void setEpisodes(int episodes){
+    public void setEpisodes(int episodes) {
         this.episodes = episodes;
     }
 
@@ -46,11 +50,11 @@ public class Anime {
         return this.name;
     }
 
-    public String getType(){
+    public String getType() {
         return this.type;
     }
 
-    public int getEpisodes(){
+    public int getEpisodes() {
         return this.episodes;
     }
 

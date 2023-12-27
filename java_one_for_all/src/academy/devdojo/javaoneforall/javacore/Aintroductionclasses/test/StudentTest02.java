@@ -4,11 +4,12 @@ import academy.devdojo.javaoneforall.javacore.Aintroductionclasses.domain.Studen
 
 public class StudentTest02 {
     public static void main(String[] args) {
-        // new Student(); it's possible only create one new object like this, but we cannot do anything with he, because
-                     // not exist one space in memory which reference for this new object
+        // new Student(); it's possible only create one new object like this, but we
+        // cannot do anything with he, because
+        // not exist one space in memory which reference for this new object
         Student student = new Student();
         Student student2 = new Student();
-        
+
         student.name = "Sanji";
 
         System.out.println(student.name);
@@ -20,6 +21,6 @@ public class StudentTest02 {
         System.out.println(student2.name);
         System.out.println(student2.gender);
         System.out.println(student2.age);
-        
+
     }
 }

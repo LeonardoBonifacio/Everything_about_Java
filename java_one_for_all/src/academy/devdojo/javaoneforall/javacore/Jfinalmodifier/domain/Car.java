@@ -9,7 +9,7 @@ public class Car {
     public static final double SPEED_LIMIT;
     // all this rules and annotations for primitive types
     // final keyword make whatever variable turned out one CONSTANT
-    // Constant must be initialized/ can be like this way above or
+    // Constant must be initialized like this way above or
     // in initialization blocks or static initialization blocks
     // Constant conventions of name is all letter uppercase and separeted by _
     // Constant in the most cases are declared as static, because it's never change
@@ -17,7 +17,7 @@ public class Car {
     // he's going to belongs for the whole class
     // since no one could change the value, we can make this constant public
     public final Buyer BUYER = new Buyer();
-    // this BUYER constant reference variable has a reference to class Buyer, and
+    // this BUYER constant reference variable has a reference to class(actually object created by this class) Buyer
     // since it's initialized as final
     // we cannot change this reference anymore, but we can change whatever else
     // inside this object of class Buyer
@@ -40,7 +40,7 @@ public class Car {
     // will be like this, and anyone can change the print behavior in any of the
     // subclass)
     // this class could be extended(because he's not final) but the functionalities
-    // of the print method should remain the same as the  super class
+    // of the print method should remain the same as the super class
     public final void print() {
         System.out.println(this.name);
     }
@@ -54,7 +54,7 @@ public class Car {
     }
     // class String for example has final modifier, because already exists 52
     // billion jvms running all over the world , and imagine if you could not get or
-    // expect the behavior of the string class(since he are one of the most
+    // expect the behavior of the string class(since he's  one of the most
     // important class in java and they should never changed, the way that strings
     // they behave in the jvm should never changed)
     // if you are abble to extend the string class you could change any of the

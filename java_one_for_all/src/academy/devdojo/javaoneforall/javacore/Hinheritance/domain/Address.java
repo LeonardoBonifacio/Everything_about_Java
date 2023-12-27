@@ -4,10 +4,9 @@ public class Address {
     private String street;
     private String zipcode;
 
-
-    public void print(){
+    public void print() {
         // i can do this because this whole class Employee has attributes protected
-        // and he stood in the same package which this class(Address) even though this 
+        // and he stood in the same package which this class(Address) even though this
         // class isn't a sub class of Employee
         Employee employee = new Employee(" ");
         System.out.println(employee.name);

@@ -11,8 +11,7 @@ public class InputKeyboardDataTest02 {
             String question = input.nextLine();
             if (question.charAt(0) == ' ') {
                 System.out.println("YES");
-            }
-            else{
+            } else {
                 System.out.println("NO");
             }
 
@@ -21,7 +20,7 @@ public class InputKeyboardDataTest02 {
             if (skipOrNo == 'N') {
                 break;
             }
-            
+
         }
     }
 }

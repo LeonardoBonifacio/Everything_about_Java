@@ -9,8 +9,6 @@ public class Manager extends Employee {
     // inherited, manager is everything that employee is and something more
     private String department;
 
-
-
     static {
         System.out.println("Inside Manager Static init Block");
     }
@@ -38,15 +36,14 @@ public class Manager extends Employee {
     // with the constructor in Employee
 
     // here the inheritance come in act
-    // when should you use inheritance basically when you want extend the
-    // functionality or
-    // when you want use polimorphism
+    // when should you use inheritance?  basically when you want extend the
+    // functionality or when you want use polimorphism
 
     // if you have method with the same name in both of the class related
     // super class and sub-class, when you call one method though one object
     // the method which belong a super class will be call
     // but if you have one method with the same name in your sub-class
-    // he is going to be call
+    // he is going to be call if you override it
     @Override // this method is overring the same method from the super class(Employee)
     public void print() {
         super.print();// this super is call the method from the super class but with the values

@@ -11,7 +11,7 @@ public class CalculatorTest03 {
         System.out.println(result);
         System.out.println(calculator.divideTwoNumbers(10, 2));
 
-        //System.out.println(calculator.printTwoNumbersDivided(10, 2));
+        // System.out.println(calculator.printTwoNumbersDivided(10, 2));
         // you cannot have void methods inside the println
         System.out.println("------------------------------");
         calculator.printTwoNumbersDivided(10, 0);

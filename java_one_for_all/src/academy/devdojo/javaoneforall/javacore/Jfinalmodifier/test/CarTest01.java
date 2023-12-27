@@ -13,7 +13,7 @@ public class CarTest01 {
         // the object, and since it's public we can access this every time and anywhere
         System.out.println(Car.SPEED_LIMIT);
 
-        // we cannot to things like this in this final reference variable under because
+        // we cannot do things like this in this final reference variable under because
         // this is final
         // and we only can change the attributes and methods inside
         // car.BUYER = new Buyer();
@@ -22,7 +22,7 @@ public class CarTest01 {
         // hold another object with another methods(like toString and getter and
         // setters)
         System.out.println(car.BUYER);
-        // when you add final modifier to a reference variable what cannot i change is
+        // when you add final modifier to a reference variable what we cannot  change is
         // the reference, only the reference]
 
         ferrari.setName("Enzo");

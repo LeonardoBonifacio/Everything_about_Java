@@ -22,7 +22,8 @@ public class Anime {
     // exaclty the same parameters
     // other rule is you cannot make the methods which you are overriding more
     // restrictive in fact , only less restrictive
-    // try to have the same assignature when you overriding your methods to make sure
+    // try to have the same assignature when you overriding your methods to make
+    // sure
     public void setName(String name) {
         this.name = name;
     }
