@@ -41,11 +41,22 @@ public class Shapes {
 
         System.out.println();
 
-        String patternAsteristhics = "*";
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(patternAsteristhics);
-            patternAsteristhics += "*";
+
+        String[] patters = {"*", "*", "*", "*", "*", "*", "*", "*","*"};
+
+        for (int i = 0; i <= 9; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(patters[j]);
+            }
+            System.out.println();
         }
+        for (int i = 9; i >= 0; i--) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(patters[j]);
+            }
+            System.out.println();
+        }
+        System.out.println();
 
     }
 }

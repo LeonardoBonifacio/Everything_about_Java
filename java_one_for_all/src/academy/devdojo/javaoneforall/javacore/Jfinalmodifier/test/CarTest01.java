@@ -22,7 +22,7 @@ public class CarTest01 {
         // hold another object with another methods(like toString and getter and
         // setters)
         System.out.println(car.BUYER);
-        // when you add final modifier to a reference variable what we cannot  change is
+        // when you add final modifier to a reference variable what we cannot change is
         // the reference, only the reference]
 
         ferrari.setName("Enzo");
