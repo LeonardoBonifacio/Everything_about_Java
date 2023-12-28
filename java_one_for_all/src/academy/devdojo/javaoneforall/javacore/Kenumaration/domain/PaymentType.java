@@ -3,7 +3,7 @@ package academy.devdojo.javaoneforall.javacore.Kenumaration.domain;
 public enum PaymentType {
     // for each object(DEBIT OR CREDIT) which is been called i'm overrinding a
     // method
-    // so tha it's peforms like i want for each type o payment
+    // so tha it's peforms like i want for each type of payment
     DEBIT {
         @Override
         public double calculationDiscount(double value) {
@@ -17,7 +17,7 @@ public enum PaymentType {
         }
     };
 
-    // since one method whitch i write in my program are going to be overriding for
+    // since one method which i write in my program are going to be overriding for
     // all of the objects, it's more clever declare this method like abstract
     public abstract double calculationDiscount(double value);
     // abstract methods can never have a body

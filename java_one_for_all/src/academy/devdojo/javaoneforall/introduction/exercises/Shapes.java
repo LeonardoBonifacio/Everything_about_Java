@@ -1,5 +1,7 @@
 package academy.devdojo.javaoneforall.introduction.exercises;
 
+import java.util.Scanner;
+
 public class Shapes {
     public static void main(String[] args) {
         System.out.println("*********     ***       *        **");
@@ -42,21 +44,45 @@ public class Shapes {
         System.out.println();
 
 
-        String[] patters = {"*", "*", "*", "*", "*", "*", "*", "*","*"};
+        Scanner input = new Scanner(System.in);
+        int oddNumber;
+        while (true) {
+            System.out.print("Put a number of row to the diamond(between 1 and 19 and odd): ");
+            oddNumber = input.nextInt();
+            if ((oddNumber >= 1 && oddNumber <= 19) && oddNumber % 2 != 0) {
+                break;
+            }
+            System.out.print("This number must be in range 1 to 19 and be and odd number, put again:  ");
+            oddNumber = input.nextInt();
+        }
 
-        for (int i = 0; i <= 9; i++) {
+
+        String[] patters = {"*", "*", "*", "*", "*", "*", "*", "*","*","*","*","*","*","*","*","*","*","*","*"};
+
+        for (int i = 0; i <= oddNumber; i++) {
             for (int j = 0; j < i; j++) {
                 System.out.print(patters[j]);
             }
             System.out.println();
         }
-        for (int i = 9; i >= 0; i--) {
+        for (int i = oddNumber; i >= 0; i--) {
             for (int j = 0; j < i; j++) {
                 System.out.print(patters[j]);
             }
             System.out.println();
         }
         System.out.println();
+
+
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 3; j++) {
+                for (int k = 1; k <= 4; k++) {
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
 
     }
 }

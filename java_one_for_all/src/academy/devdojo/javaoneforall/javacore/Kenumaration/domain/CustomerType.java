@@ -1,9 +1,9 @@
 package academy.devdojo.javaoneforall.javacore.Kenumaration.domain;
 
-import javax.print.DocFlavor.STRING;
-
 // you create a file enumeration add 'enum' instead of 'class'
 // is a special type of class that has some sort of things very usefull
+// like where you can specifically work with a problem where you have to choose a selection between
+// a limited amount of options
 public enum CustomerType {
     // inside enumeration everything is final, CONSTANT and Static
     // THE TYPE OF THIS ATTRIBUTES IS CustumerType
@@ -11,9 +11,11 @@ public enum CustomerType {
     // individual
     // number 2 represents the company
     // and number 3 represents the Start-up
-    INDIVIDUAL(1, "Individual"),//call the constructor for this two attributes
-    COMPANY(2, "Company"),// call the constructor for this two attributes
-    START_UP(3, "Start-Up");// call the constructor for this two attributes
+    INDIVIDUAL(1, "Individual"), // call the constructor for fulfill this attribute/object
+    COMPANY(2, "Company"), // call the constructor for fulfill this attribute/object
+    START_UP(3, "Start-Up");// call the constructor for fulfill this attribute/object
+    // with this 3 objects(attributes) of CustumerType anything else will not be able to create anything different
+    // than this 3 allowed types inside CustumerType
     // each one of the enumerations that you have inside your enumaration class is a
     // object
     // and each one of this object(INDIVIDUAL, COMPANY, START-UP) they can have
@@ -31,10 +33,10 @@ public enum CustomerType {
         this.reportValue = reportValue;
     }
 
-
-    // here i create a method which return the object enumeration that contain this reportValues
+    // here i create a method which return the object enumeration that contain this
+    // reportValues
     // it's like valuesOf()
-    public static CustomerType getByReportValue(String reportValue){
+    public static CustomerType getByReportValue(String reportValue) {
         for (CustomerType customerType : values()) {
             if (customerType.getReportValue().equalsIgnoreCase(reportValue)) {
                 return customerType;

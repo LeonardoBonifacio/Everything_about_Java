@@ -6,8 +6,8 @@ import academy.devdojo.javaoneforall.javacore.Kenumaration.domain.PaymentType;
 
 public class CustomerTest01 {
     public static void main(String[] args) {
-        // passing attributes  from the Enumeration CustomerType(COMPANY and INDIVIDUAL)
-        // passing attributes from the Enumeration PaymentType(CREDIT, DEBIT, MONEY, PIX), inside our class Customer
+        // passing attributes(objects) from the Enumeration CustomerType(COMPANY and INDIVIDUAL)
+        // passing attributes(objects) from the Enumeration PaymentType(CREDIT, DEBIT, MONEY, PIX)
         Customer customer1 = new Customer("Tsubasa", CustomerType.INDIVIDUAL, PaymentType.CREDIT);
         Customer customer2 = new Customer("Akira", CustomerType.COMPANY, PaymentType.DEBIT);
         // only objects which pass for the validation of data inside the constructor are
@@ -19,7 +19,7 @@ public class CustomerTest01 {
         System.out.println(PaymentType.CREDIT.calculationDiscount(100));
 
         // for (CustomerType value : CustomerType.values()) {
-        //     System.out.println(value);
+        // System.out.println(value);
         // }
 
         // All enumerations will provide to you some methods like:
