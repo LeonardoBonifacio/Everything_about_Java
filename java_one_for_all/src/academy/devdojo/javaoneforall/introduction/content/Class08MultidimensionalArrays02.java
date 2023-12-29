@@ -1,10 +1,11 @@
 package academy.devdojo.javaoneforall.introduction.content;
 
+
 public class Class08MultidimensionalArrays02 {
     public static void main(String[] args) {
         int[][] array = new int[3][];
         int[] numbers = {1, 2, 3};
-        
+
         // diferent ways the initialize an array and set your size
         array[0] = new int[]{-1, 0};
         array[1] = numbers;

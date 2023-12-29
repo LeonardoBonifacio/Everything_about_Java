@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class GlobalWarmingFactsQuiz {
     public static void main(String[] args) {
         String[] questions = {
-                "Qual é a principal causa do aquecimento global?",
-                "Qual gás é frequentemente associado ao efeito estufa e contribui significativamente para o aquecimento global?",
-                "Como as atividades humanas, como queima de combustíveis fósseis, afetam o aquecimento global?",
-                "Qual é o principal impacto do aquecimento global nos ecossistemas marinhos?",
-                "O que podemos fazer para mitigar os efeitos do aquecimento global?"
+                "A) Qual é a principal causa do aquecimento global?",
+                "B) Qual gás é frequentemente associado ao efeito estufa e contribui significativamente para o aquecimento global?",
+                "C) Como as atividades humanas, como queima de combustíveis fósseis, afetam o aquecimento global?",
+                "D) Qual é o principal impacto do aquecimento global nos ecossistemas marinhos?",
+                "E) O que podemos fazer para mitigar os efeitos do aquecimento global?"
         };
 
         String[][] respostaQuestions = {
@@ -45,7 +45,9 @@ public class GlobalWarmingFactsQuiz {
                 } };
 
         Scanner input = new Scanner(System.in);
+        int qtdCorretas = 0;
         int alternativa;
+        System.out.println();
         System.out.println("Desafio Ambiental: Teste Seus Conhecimentos sobre o Aquecimento Global");
         for (int i = 0; i < 5; i++) {
             System.out.println();
@@ -55,7 +57,26 @@ public class GlobalWarmingFactsQuiz {
             }
             System.out.print("Resposta ->");
             alternativa = input.nextInt();
+            if (i == 0 && alternativa == 1) {
+                qtdCorretas++;
+            }
+            else if((i == 1 || i == 2) && alternativa == 3){
+                qtdCorretas++;
+            }
+            else if((i == 3 || i == 4) && alternativa == 2){
+                qtdCorretas++;
+            }
             System.out.println();
+        }
+
+        if (qtdCorretas == 5) {
+                System.out.println("Excellent");
+        }
+        else if(qtdCorretas == 4){
+                System.out.println("Very good");
+        }
+        else{
+                System.out.println("Time to brush up on your knowledge of global warming");
         }
     }
 }

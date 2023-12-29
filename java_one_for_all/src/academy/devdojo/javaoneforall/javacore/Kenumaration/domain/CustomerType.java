@@ -37,7 +37,7 @@ public enum CustomerType {
     // reportValues
     // it's like valuesOf()
     public static CustomerType getByReportValue(String reportValue) {
-        for (CustomerType customerType : values()) {
+        for (CustomerType customerType : CustomerType.values()) {
             if (customerType.getReportValue().equalsIgnoreCase(reportValue)) {
                 return customerType;
             }

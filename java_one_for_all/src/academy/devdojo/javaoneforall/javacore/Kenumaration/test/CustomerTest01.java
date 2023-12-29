@@ -19,7 +19,7 @@ public class CustomerTest01 {
         System.out.println(PaymentType.CREDIT.calculationDiscount(100));
 
         // for (CustomerType value : CustomerType.values()) {
-        // System.out.println(value);
+        //     System.out.println(value);
         // }
 
         // All enumerations will provide to you some methods like:
@@ -30,7 +30,7 @@ public class CustomerTest01 {
         System.out.println(customerType.getReportValue());
 
         CustomerType customerType2 = CustomerType.getByReportValue("ComPany");
-        System.err.println(customerType2.getReportValue());
+        System.out.println(customerType2.getReportValue());
 
     }
 }
