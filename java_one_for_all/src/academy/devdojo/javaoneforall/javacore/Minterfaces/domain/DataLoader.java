@@ -11,13 +11,14 @@ public interface DataLoader {
     // and subclasses
     // by default all the methods that you written in a Interface will be considered
     // public and abstract
-    // this means that we can only provide for the method which type of return is
+    // this means that we can only must provide for the method which type of return
+    // is
     // going to have and your name
     // and when you are overriding one method of one interface you cannot change the
     // access modifier this method
     // this cannot be more restrictive(like access modifier package(default) or
     // proctected access modifier)
-    // order the restriction in acces modifier(more to less restrictive):
+    // order the restriction in access modifier(more to less restrictive):
     // private -> default(package access modfier) -> proctected -> public
     // when in inherited a method from a SuperClass you can overriding in a SubClass
     // and always makes this method less restrictive, but you cannot make it more
@@ -33,23 +34,24 @@ public interface DataLoader {
     // now imagine add another method inside for example, interface Collections,
     // where more than 50 billions of jvm are in constant use of this Interface
     // and when i put another method all the Class which are implement this
-    // interface will going to raised
+    // interface will going to raise
     // a compilation error
     // now how can they(developers) provide you with new methods that will improve
-    // the functionality of the Collection
+    // the functionality of the Collection? 
     // to avoid that problem and without break the entire core of the java language,
     // they decide to provide one extra way to do this methods in java, through the
     // keyword default
     // when you have this keyword default it means that your method can have
-    // implementations and all the class tha are implementing this Interface(in this
+    // implementations and all the class that are implementing this Interface(in this
     // case here DataLoader and method checkPermission), will not have to do it, it
-    // will be optional(because this keyword automatically transfer the method for
-    // all classe that may implementing this, like inheritance, if the Classes want
+    // will be optional(because default keyword automatically transfer the method for
+    // all classes that may implementing this, like inheritance, if the Classes want
     // to override and implement and your own way they can do, but it's not
     // mandatory )
+    
     // it's transformer in a concrete method(public) that can be implement and
     // overriding or not
-    default void checkPermission() {
+    public default void checkPermission() {
         System.out.println("Cheking implementation general ");
     }
     // all the classes(DataBaseLoader and FileLoader) which are implementing this

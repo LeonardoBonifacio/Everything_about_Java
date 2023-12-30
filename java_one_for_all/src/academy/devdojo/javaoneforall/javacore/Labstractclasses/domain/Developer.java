@@ -7,7 +7,8 @@ public class Developer extends Employee {
     }
 
     // once you have a abstract method in one class which you are inheritance, you
-    // must override this method and provide your own implementation for this method in all your subclasses
+    // must override this method and provide your own implementation for this method
+    // in all your subclasses
     @Override
     public String toString() {
         return "Developer{Name: " + this.name + ", Salary: " + this.salary + "}";
