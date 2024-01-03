@@ -22,7 +22,17 @@ public class SmallestNumber {
             }
         }
 
-        System.out.print("The smallest Number is: " + smallestNumber);
+        System.out.println("The smallest Number is: " + smallestNumber);
 
+        minimun(3,2,1,-12,3,9123,1);
+
+    }
+
+    public static void minimun(int... numbers){
+        int smallNumber = numbers[0];
+        for (int number : numbers) {
+            smallNumber = Math.min(smallNumber, number);
+        }
+        System.out.println("The small number is: " + smallNumber);
     }
 }

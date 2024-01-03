@@ -16,14 +16,20 @@ public class Shapes {
         System.out.println("*********      *        *         *");
 
         System.out.println();
+        System.out.println();
+
 
         System.out.println("*");
         System.out.println("***");
         System.out.println("*****");
         System.out.println("****");
         System.out.println("**");
- 
+
+
         System.out.println();
+        System.out.println();
+
+
 
         System.out.print("*");
         System.out.print("***");
@@ -31,7 +37,11 @@ public class Shapes {
         System.out.print("****");
         System.out.println("**");
         
+
         System.out.println();
+        System.err.println();
+
+
         String pattern = "********";
         for (int i = 1; i <= 8; i++) {
             if (i % 2 == 0) {
@@ -41,6 +51,7 @@ public class Shapes {
             System.out.println(pattern);
         }
 
+        System.out.println();
         System.out.println();
 
 
@@ -57,8 +68,9 @@ public class Shapes {
         }
 
 
+    
         String[] patters = {"*", "*", "*", "*", "*", "*", "*", "*","*","*","*","*","*","*","*","*","*","*","*"};
-
+        
         for (int i = 0; i <= oddNumber; i++) {
             for (int j = 0; j < i; j++) {
                 System.out.print(patters[j]);
@@ -71,9 +83,10 @@ public class Shapes {
             }
             System.out.println();
         }
+
         System.out.println();
-
-
+        System.out.println();
+        
         for (int i = 1; i <= 5; i++) {
             for (int j = 1; j <= 3; j++) {
                 for (int k = 1; k <= 4; k++) {
@@ -84,5 +97,22 @@ public class Shapes {
             System.out.println();
         }
 
+
+        System.out.println();
+        System.out.println();
+
+
+
+        displayinSquareOfAnyCharacter(7, "!");
+
+    }
+
+    public static void displayinSquareOfAnyCharacter(int size, String character){
+        for (int i = 1; i <= size; i++) {
+            for (int j = 1; j <= size; j++) {
+                System.out.print(character);
+            }
+            System.out.println();
+        }
     }
 }

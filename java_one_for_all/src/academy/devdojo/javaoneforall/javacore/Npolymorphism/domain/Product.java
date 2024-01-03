@@ -9,7 +9,7 @@ public abstract class Product implements Taxable {
         this.price = price;
     }
 
-    public double getprice() {
+    public double getPrice() {
         return this.price;
     }
 
