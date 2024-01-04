@@ -14,7 +14,7 @@ public class ProductTest01 {
     public static void main(String[] args) {
         Computer computer = new Computer("NUC10I7", 1000);
         Tomato tomato = new Tomato("Italian", 5);
-        Television television = new Television("Samsung", 700);
+        Television television = new Television("Samsung 49\"", 700);
 
         // This is call widening cast(when we send a subclass object to a superclass
         // reference variable), but for one method which receive whatever object of the

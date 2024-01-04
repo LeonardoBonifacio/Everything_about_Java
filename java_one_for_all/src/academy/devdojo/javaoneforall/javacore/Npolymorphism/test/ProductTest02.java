@@ -14,7 +14,7 @@ public class ProductTest02 {
         System.out.println(product.getPrice());
         System.out.println(product.calculateTaxPrice());
 
-        System.out.println();
+        System.out.println("----------------------------------------");
 
         Product product2 = new Tomato("Dutch", 7);
         System.out.println(product2.getName());

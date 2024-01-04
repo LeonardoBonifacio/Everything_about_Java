@@ -11,7 +11,7 @@ public class Anime {
     // because this order above, we cannot access the instance variables inside the
     // static, because the memory allocation is didn't happen yet
     // so for all the static methods and attributtes basically they exist even
-    // before the memory is allocated and if the memomry is not allocated
+    // before the memory is allocated and if the memory is not allocated
     // you cannot have an instance and if you don't have an instance you don't have
     // a instance variables
     // And this is why you can never use the keyword 'this' inside static methods or
