@@ -1,6 +1,5 @@
 package academy.devdojo.javaoneforall.javacore.Oexception.runtime.test;
 
-import java.util.List;
 
 public class RunTimeExceptionTest01 {
     public static void main(String[] args) {
