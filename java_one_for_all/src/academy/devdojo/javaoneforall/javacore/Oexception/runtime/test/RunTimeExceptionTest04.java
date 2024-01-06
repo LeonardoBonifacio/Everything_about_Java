@@ -31,7 +31,7 @@ public class RunTimeExceptionTest04 {
             // this same concept works for exceptions the type checked
         }
 
-        try {// we must walways handle of all exceptions which our method can throw separated
+        try {// we must always handle of all exceptions which our method can throw separated
             // until the most generic Exception(in this case as all Exceptions are checked) the Class Exception Itself
             mayThrowException();
         } catch (SQLException e) {

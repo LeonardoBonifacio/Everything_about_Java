@@ -8,7 +8,7 @@ public class RunTimeExceptionTest03 {
     }
 
     private static String openConection() {
-        try {// you can never write only the try, you always must have at least one catch block or at leat one finally
+        try {// you can never write only the try, you always must have at least one catch block or at least one finally
             System.out.println("Opening Conection");
             System.out.println("Writing to the database");
             return "Connected";
