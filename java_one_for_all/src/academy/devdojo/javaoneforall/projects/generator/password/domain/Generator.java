@@ -1,6 +1,7 @@
 package academy.devdojo.javaoneforall.projects.generator.password.domain;
 
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Generator {
     Alphabet alphabet;
