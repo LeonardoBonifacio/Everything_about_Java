@@ -36,7 +36,7 @@ public class StringPerformanceTest01 {
 
     private static void concatStringBuilder(int size) {
         StringBuilder text = new StringBuilder(size);
-        // with String build our performance its much beter than only String as well
+        // with StringBuilder our performance its much beter than only use  String class as well
         for (int i = 0; i < size; i++) {
             text.append(i);
         }
@@ -44,7 +44,6 @@ public class StringPerformanceTest01 {
 
     private static void concatStringBuffer(int size) {
         StringBuffer text = new StringBuffer(size);
-        // with String build our performance its much beter than only String as well
         for (int i = 0; i < size; i++) {
             text.append(i);
         }

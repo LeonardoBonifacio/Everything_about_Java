@@ -10,7 +10,7 @@ public class StringBuilderTest01 {
         // StringBuilder works with objects and they are different of ordinary Strings(which are imutable)
         StringBuilder sb = new StringBuilder("Leonardo Bonifácio");
         sb.append(" é maluco").append(" ta sabendo né? ");// i cannot use the plus sign(+) for concatenation in StringBuilders
-        // the append method reassing the reference, and return one StringBuilder object as well
+        // the append method override the reference, and return one StringBuilder object as well
         // but not all methods will are going to do that
         System.out.println(sb.substring(0, 3));
         System.out.println(sb);
