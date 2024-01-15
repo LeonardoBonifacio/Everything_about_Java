@@ -1,9 +1,8 @@
 package academy.devdojo.javaoneforall.javacore.Rdate.test;
 
 import java.util.Calendar;// class calendar is a abstract class, so you will use one of the your subclasses
+                          // for get the power of your methods
 import java.util.Date;
-// for get the power of your methods
-import java.util.GregorianCalendar;
 
 public class CalendarTest01 {
     public static void main(String[] args) {

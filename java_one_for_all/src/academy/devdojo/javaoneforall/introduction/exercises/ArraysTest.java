@@ -1,5 +1,6 @@
 package academy.devdojo.javaoneforall.introduction.exercises;
 
+import java.security.SecureRandom;
 import java.util.Arrays;
 
 public class ArraysTest {
@@ -13,15 +14,35 @@ public class ArraysTest {
         //     }
         // }
 
-        int[] a = new int[20];
-        int[] b = new int[34];
-        Arrays.fill(a, 12);
-        int[] copyA = Arrays.copyOfRange(a, 0, 12);
-        for (int i = 0; i <= 11; i++) {
-            b[i] = copyA[i];
+        SecureRandom random = new SecureRandom();
+        // int[] a = new int[20];
+        // int[] b = new int[34];
+        // Arrays.fill(a, 12);
+        // int[] copyA = Arrays.copyOfRange(a, 0, 12);
+        // for (int i = 0; i <= 11; i++) {
+        //     b[i] = copyA[i];
+        // }
+        // for (int i : b) {
+        //     System.out.println(i);
+        // }
+
+        float[] w =  new float[99];
+        Arrays.fill(w, random.nextFloat(100.90F));
+        float smalest = w[0];
+        float largest = w[0];
+        for (int i = 1; i < w.length; i++) {
+            if (w[i] > largest) {
+                largest = w[i];
+            }
+            else if (w[i] < smalest){
+                smalest = w[i];
+            }
+            else{
+                continue;
+            }
         }
-        for (int i : b) {
-            System.out.println(i);
-        }
+
+        System.out.println("The smallest values is: " + smalest);
+        System.out.println("The largest values is: " + largest);
     }
 }
