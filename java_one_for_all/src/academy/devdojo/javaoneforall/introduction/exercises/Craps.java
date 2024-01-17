@@ -1,6 +1,7 @@
 package academy.devdojo.javaoneforall.introduction.exercises;
 
 import java.security.SecureRandom;
+import java.text.NumberFormat;
 
 public class Craps {
     private static final SecureRandom randomNumbers = new SecureRandom();
@@ -19,42 +20,68 @@ public class Craps {
 
     public static void main(String[] args) {
         int myPoint = 0;
+        int gamesWon = 0;
+        int gamesWonOnTheFirstRoll = 0;
+        int gamesWonOnTheSecondRollAndAfter = 0;
+        int gamesLost = 0;
+        int gamesLostOntheFirstRoll = 0;
+        int gamesLostOntheFirstRollAndAfter = 0;
         Status gameStatus;
 
-        int sumOfDice = rollDice();
-
-        switch (sumOfDice) {
-            case SEVEN:
-            case YO_LEVEN:
-                gameStatus = Status.WON;
-                break;
-            case SNAKE_EYES:
-            case TREY:
-            case BOX_CARS:
-                gameStatus = Status.LOST;
-                break;
-            default:
-                gameStatus = Status.CONTINUE;
-                myPoint = sumOfDice;
-                System.out.println("Point is: " + myPoint);
-                break;
-        }
-
-        while (gameStatus == Status.CONTINUE) {
-            sumOfDice = rollDice();
-
-            if (sumOfDice == myPoint) {
-                gameStatus = Status.WON;
-            } else if (sumOfDice == SEVEN) {
-                gameStatus = Status.LOST;
+        for (int i = 1; i <= 1000; i++) {
+            
+            int sumOfDice = rollDice();
+    
+            switch (sumOfDice) {
+                case SEVEN:
+                case YO_LEVEN:
+                    gamesWonOnTheFirstRoll++;
+                    gameStatus = Status.WON;
+                    break;
+                case SNAKE_EYES:
+                case TREY:
+                case BOX_CARS:
+                    gamesLostOntheFirstRoll++;
+                    gameStatus = Status.LOST;
+                    break;
+                default:
+                    gameStatus = Status.CONTINUE;
+                    myPoint = sumOfDice;
+                    System.out.println("Point is: " + myPoint);
+                    break;
+            }
+    
+            while (gameStatus == Status.CONTINUE) {
+                sumOfDice = rollDice();
+    
+                if (sumOfDice == myPoint) {
+                    gamesWonOnTheSecondRollAndAfter++;
+                    gameStatus = Status.WON;
+                } else if (sumOfDice == SEVEN) {
+                    gamesLostOntheFirstRollAndAfter++;
+                    gameStatus = Status.LOST;
+                }
+            }
+    
+            if (gameStatus == Status.WON) {
+                gamesWon++;
+                System.out.println("Player Wins");
+                System.out.println();
+            } else {
+                gamesLost++;
+                System.out.println("Player loses");
+                System.out.println();
             }
         }
-
-        if (gameStatus == Status.WON) {
-            System.out.println("Player Wins");
-        } else {
-            System.out.println("Player loses");
-        }
+        System.out.println("Playing this game 100 times the player wins: " + gamesWon);
+        System.out.println("Wins in the first Roll: " + gamesWonOnTheFirstRoll);
+        System.out.println("Wins in the second Roll and after: " + gamesWonOnTheSecondRollAndAfter);
+        System.out.println("Playing this game 100 tims the player lost: " + gamesLost);
+        System.out.println("Lost in the first Roll: " + gamesLostOntheFirstRoll);
+        System.out.println("Lost in the second Roll and after: " + gamesLostOntheFirstRollAndAfter);
+        System.out.println("The chances of win this game gone: " + (((double) gamesWon/100) * 10) + "%");
+        System.out.println("The chances of lost this game gone: " + (((double) gamesLost/100) * 10) + "%");
+        
     }
 
     public static int rollDice() {
@@ -63,7 +90,9 @@ public class Craps {
 
         int sum = die1 + die2;
 
+        System.out.println();
         System.out.printf("Player rolled %d + %d = %d%n", die1, die2, sum);
+        System.out.println();
 
         return sum;
     }

@@ -1,6 +1,5 @@
 package academy.devdojo.javaoneforall.javacore.Rdate.test;
 
-import java.net.Socket;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;

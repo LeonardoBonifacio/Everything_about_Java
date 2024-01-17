@@ -38,16 +38,16 @@ public class ZoneTest01 {
         System.out.println(ZoneOffset.MAX);
         System.out.println();
 
-        ZoneOffset manauOffset = ZoneOffset.of("-04:00");
-        OffsetDateTime offsetDateTime1 = now.atOffset(manauOffset);
+        ZoneOffset manausOffset = ZoneOffset.of("-04:00");
+        OffsetDateTime offsetDateTime1 = now.atOffset(manausOffset);
         System.out.println(offsetDateTime1);
         System.out.println();
 
-        OffsetDateTime offsetDateTime2 = instant.atOffset(manauOffset);
+        OffsetDateTime offsetDateTime2 = instant.atOffset(manausOffset);
         System.out.println(offsetDateTime2);
         System.out.println();
 
-        OffsetDateTime offsetDateTime3 = OffsetDateTime.of(now,manauOffset);
+        OffsetDateTime offsetDateTime3 = OffsetDateTime.of(now,manausOffset);
         System.out.println(offsetDateTime3);
         System.out.println();
 
