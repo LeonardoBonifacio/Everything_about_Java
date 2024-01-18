@@ -51,7 +51,7 @@ public class DateTimeFormatterTest01 {
         System.out.println(formatBR);
         System.out.println();
         
-        LocalDate parseBR =LocalDate.parse("17/01/2024", formatterBR);
+        LocalDate parseBR = LocalDate.parse("17/01/2024", formatterBR);
         System.out.println(parseBR);
         System.out.println();
 
