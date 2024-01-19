@@ -31,11 +31,11 @@ public class PatternMatcherTest05 {
         // like 3.2 can be 312 or 392 or 3@2 or 3 2 or 3_2 or 3#2 or 3[2
         // if you want to find one . in a expression you must use the escape character \\. like this
         // ^ it's use for negation of character like
-        // if i want to search any word without the letter '' in this letter
-        // i will put in my reger ^a
+        // if i want to search any word without the letter 'a' in this word
+        // i will put in my regex ^a
         String regex = "([a-zA-Z0-9\\._-])+@([a-zA-Z])+(\\.([a-zA-Z])+)+";
         String text = "luffy@hotmail.com, 123jotaro@gmail.com, #@!zoro@gmail.br, test@gmail.com.br, sakura@mail"; 
-        // String has a method matches for validade if one string matches with one regular expression
+        // String has a method matches for validate if one string matches with one regular expression
         // this method is very usefull for validation of emails for example
         System.out.println("zoro@gmail.br".matches(regex));
         System.out.println();

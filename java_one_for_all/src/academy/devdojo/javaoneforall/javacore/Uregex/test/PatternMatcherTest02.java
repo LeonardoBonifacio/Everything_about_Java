@@ -8,8 +8,8 @@ public class PatternMatcherTest02 {
         // Metacharacters
         // \d - All the digits 0-9
         // \D - Everything that is not \d (which means everything that is not a digit character)
-        // \S - everything that is no \s (which means everything that is no a space)
         // \s - all the blank spaces like \t \r \f \n
+        // \S - everything that is no \s (which means everything that is no a space)
         // \w - all the letters(a-z, A-Z) and digits(0-9) and underscore(_)
         // \W - everything that is not \w (letters, digits and _)
         String regex = "\\W"; 

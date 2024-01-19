@@ -20,7 +20,7 @@ public class PatternMatcherTest04 {
         // * zero or more
         // + one or more
         // {n,m} from n to m
-        // () -> group some character tha i want to find
+        // () -> group some character that i want to find
         // | basicaly this OR this
         // person(a|s) ->  returns   persons or persona 
         // $ represents the end of the line
