@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 public class BasicFileAttributesTest01 {
     public static void main(String[] args) throws IOException {
-        // Creating one day in the past
+        // Creating one date in the past
         LocalDateTime date = LocalDateTime.now().minusDays(10);
         // Creating a new file in folder2
         File file = new File("folder2/new_file.txt");
@@ -29,7 +29,7 @@ public class BasicFileAttributesTest01 {
         if (Files.notExists(paht)) {
             Files.createFile(paht);
         }
-        // Creating a filetime from the date in the past createde before
+        // Creating a filetime from the date in the past created before
         FileTime fileTime = FileTime.from(date.toInstant(ZoneOffset.UTC));
         // Set last time modified atribbute with class Files and FileTime time
         Files.setLastModifiedTime(paht, fileTime);
