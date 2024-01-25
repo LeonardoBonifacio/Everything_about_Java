@@ -3,6 +3,7 @@ package academy.devdojo.javaoneforall.javacore.Xserialization.domain;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serial;
 import java.io.Serializable;
 
 public class Student implements Serializable{
@@ -23,6 +24,7 @@ public class Student implements Serializable{
     }
 
 
+    @Serial
     private void writeObject(ObjectOutputStream oos){
         try {
             oos.defaultWriteObject();            
@@ -32,6 +34,7 @@ public class Student implements Serializable{
         }
     }
 
+    @Serial
     private void readObject(ObjectInputStream ois){
         try {
             ois.defaultReadObject(); 
