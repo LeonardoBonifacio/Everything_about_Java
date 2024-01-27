@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises;
+package academy.devdojo.javaoneforall.introduction.exercises.KnightsProblem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,18 +8,6 @@ public class KnightsProblem {
     public static int[][] boardChess = new int[8][8];
     public static int[] rowMoves = { 2, 1, -1, -2, -2, -1, 1, 2 };
     public static int[] colMoves = { 1, 2, 2, 1, -1, -2, -2, -1 };
-    public static List<Integer> valuesOfSpot = new ArrayList<>();
-    public static int[][] accessibility = {
-        {2, 3, 4, 4, 4, 4, 3 ,2},
-        {3, 4, 6, 6, 6, 6, 4, 3},
-        {4, 6, 8, 8, 8, 8, 6, 4},
-        {4, 6, 8, 8, 8, 8, 6, 4},
-        {4, 6, 8, 8, 8, 8, 6, 4},
-        {4, 6, 8, 8, 8, 8, 6, 4},
-        {4, 6, 8, 8, 8, 8, 6, 4},
-        {3, 4, 6, 6, 6, 6, 4, 3},
-        {2, 3, 4, 4, 4, 4, 3 ,2}
-    };
 
     public static void main(String[] args) {
         displayBoard(boardChess);

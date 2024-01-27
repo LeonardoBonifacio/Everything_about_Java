@@ -8,7 +8,7 @@ public class ListTest01 {
         // we can pass or not which type of objects we are going to accept in our
         // List<inside here>
         // the diamond syntax <> is use to represent the generic types
-        // fi you already know the capacity of you ArrayList, give this capacity into the Constructor
+        // if you already know the capacity of you ArrayList, give this capacity into the Constructor
         List<String> names = new ArrayList<>();// since java 1.4
         // Objects from class ArrayList are resizible while the program run
         List<String> names2 = new ArrayList<>();
@@ -26,13 +26,13 @@ public class ListTest01 {
             System.out.println(name);
         }
 
-        names.add("Celeste");// to proof that we can resize
+        names.add("Celeste");// to proof that they can resize
 
         System.out.println("-------------");
 
         for (int i = 0; i < names.size(); i++) {
             System.out.println(names.get(i));
-            // insteado of using [i] for acces index in List , we use the method get() and pass the index as argument
+            // instead of using [i] for access index in List , we use the method get() and pass the index as argument
             // Class list already have methods for return the lastElement in a list and the firstElement in a list
         }
 
@@ -55,7 +55,7 @@ public class ListTest01 {
 
         System.out.println("--------------");
 
-        // Not of the primitive types can be pass by the generic type in a diamond syntax in none of the collections
+        // None of the primitive types can be pass by the generic type in a diamond syntax in none of the collections
         // because behind the scene the collection must call the hashcode() and equals() method for yours objects
         List<Integer> numbers = new ArrayList<>();
         int num = 2;
