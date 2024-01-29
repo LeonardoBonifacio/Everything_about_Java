@@ -29,7 +29,9 @@ public class SmartphoneListTest01 {
         // this methods contains is calling the method equals() for each smartphone in
         // smartphones passing s4 as argument
         if (smartphones.contains(s4)) {
-            System.out.println(smartphones.get(smartphones.indexOf(s4)) + "  Index of this is : " + smartphones.indexOf(s4));// return -1 if the object not exist in this List
+            System.out.println(
+                    smartphones.get(smartphones.indexOf(s4)) + "  Index of this is : " + smartphones.indexOf(s4));
+            // return -1 if the object not exist in this List
 
         }
     }

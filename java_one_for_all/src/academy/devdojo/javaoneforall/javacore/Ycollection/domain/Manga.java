@@ -3,10 +3,11 @@ package academy.devdojo.javaoneforall.javacore.Ycollection.domain;
 import java.util.Objects;
 import java.lang.Double;
 
-public class Manga implements Comparable<Manga>{
+public class Manga implements Comparable<Manga> {
     private Long id;
     private String title;
     private double price;
+    private int quantity;
 
     public Manga(Long id, String title, double price) {
         Objects.requireNonNull(id, "Id cannot be null");
@@ -16,9 +17,15 @@ public class Manga implements Comparable<Manga>{
         this.price = price;
     }
 
+    public Manga(Long id, String title, double price, int quantity) {
+        this(id, title, price);
+        this.quantity = quantity;
+    }
+
     @Override
     public String toString() {
-        return "Manga {ID: " + this.id + " Title: " + this.title + " Price R$" + this.price + "}";
+        return "Manga {ID: " + this.id + " Title: " + this.title + " Price R$" + this.price + " Quantity: "
+                + this.quantity + "}";
     }
 
     @Override
@@ -56,7 +63,7 @@ public class Manga implements Comparable<Manga>{
         // or we can also let the String class do your job with the already ready method
         // compareTo of the Class String
         // return this.title.compareToIgnoreCase(other.title);
-        // or yet we cal also give the responsability for the Class Double for doing the
+        // or yet we can also give the responsability for the Class Double for doing the
         // same comparation(with the same returns -1,0 or 1)
         return Double.compare(this.price, other.price);
 
@@ -64,6 +71,10 @@ public class Manga implements Comparable<Manga>{
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public void setPrice(double price) {
@@ -76,6 +87,10 @@ public class Manga implements Comparable<Manga>{
 
     public String getTitle() {
         return title;
+    }
+
+    public int getQuantity() {
+        return quantity;
     }
 
     public double getPrice() {

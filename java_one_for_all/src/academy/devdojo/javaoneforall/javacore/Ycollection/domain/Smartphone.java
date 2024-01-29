@@ -22,7 +22,7 @@ public class Smartphone extends Object{
         return this.serialnumber == null ? 0 : this.serialnumber.hashCode();
         // here i'm using the hashcode provide by String Class
         // in that if the serialnumber is null, the hashcode raise one NullPointerException
-        // for that which i'm going to pass 0 if the serialnumber == null
+        // for which i'm going to pass 0 if the serialnumber == null
     }
 
     @Override
