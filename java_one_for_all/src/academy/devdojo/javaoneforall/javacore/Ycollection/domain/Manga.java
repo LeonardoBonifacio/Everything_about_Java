@@ -62,10 +62,10 @@ public class Manga implements Comparable<Manga> {
         // return this.id.compareTo(other.id);
         // or we can also let the String class do your job with the already ready method
         // compareTo of the Class String
-        // return this.title.compareToIgnoreCase(other.title);
+        return this.title.compareToIgnoreCase(other.title);
         // or yet we can also give the responsability for the Class Double for doing the
         // same comparation(with the same returns -1,0 or 1)
-        return Double.compare(this.price, other.price);
+        //return Double.compare(this.price, other.price);
 
     }
 

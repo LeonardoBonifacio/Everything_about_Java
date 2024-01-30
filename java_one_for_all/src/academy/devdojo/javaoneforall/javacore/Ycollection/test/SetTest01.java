@@ -10,7 +10,7 @@ public class SetTest01 {
     public static void main(String[] args) {
         // Set is like in math, not accept duplications(set use equals and hashcode to verify this)
         // hashSet use the hash code to have all the elements inside sorted
-        // Set has not index(like a normal array or ArrayList), so we have to iterate over it
+        // Set has not index(like a normal array or ArrayList), so we have to iterate over it with for each
         // and not keep the order of the inserction
         Set<Manga> mangas = new HashSet<>();
         mangas.add(new Manga(5L, "Pokemon", 19.99, 0));

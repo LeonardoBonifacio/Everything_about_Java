@@ -10,7 +10,7 @@ import academy.devdojo.javaoneforall.javacore.Ycollection.domain.Manga;
 public class IteratorTest01 {
     public static void main(String[] args) {
         // LinkedList is a list in that each value/object knows the position of the next
-        // and fo the previous field
+        // and for the previous field
         // and as we are working with removing elements, linkedList shows itself as
         // better option for work
         // every Choose as better as possible the type of list that you are going to

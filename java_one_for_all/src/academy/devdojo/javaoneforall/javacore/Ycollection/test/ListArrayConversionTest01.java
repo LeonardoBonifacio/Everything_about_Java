@@ -41,6 +41,7 @@ public class ListArrayConversionTest01 {
         List<Integer> numbersList03 = new ArrayList<>(Arrays.asList(numbersArray02));
         numbersList03.add(19);
         System.out.println(numbersList03);
+        System.out.println(Arrays.toString(numbersArray02));
 
         System.out.println("--------------");
 
