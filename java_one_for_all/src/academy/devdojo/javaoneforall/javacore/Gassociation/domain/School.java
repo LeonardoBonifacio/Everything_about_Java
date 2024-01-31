@@ -9,7 +9,7 @@ public class School {
     }
 
     public School(String name, Professor01[] professors){
-        this.name = name;
+        this(name);
         this.professors = professors;
     }
 

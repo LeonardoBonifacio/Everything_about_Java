@@ -42,11 +42,11 @@ public class NavigableSetTest01 {
         System.out.println("-------------");
 
         // this TreeSet are sorted this object by price, because the override method
-        // compare in Class Manga
+        // compare in Class Manga or because this compartor which we are passing in the constructor right here
         // an its sorting withouth pass one Comparator, because class Manga already
         // implements Comaparable
         // everything that you do with TreeSet work with the comparator that you pass in this constructor
-        // or with the compareTo method that you are overriding
+        // or with the compareTo method that you are overriding from the interface Comparable
         NavigableSet<Manga> mangas = new TreeSet<>(new MangaPriceComparator());
         mangas.add(new Manga(5L, "Pokemon", 19.99, 0));
         mangas.add(new Manga(3L, "Hellsing ultimate", 59.99, 5));
@@ -73,6 +73,7 @@ public class NavigableSetTest01 {
         System.out.println("-----------------");
 
         Manga yuyuhakusho = new Manga(11L, "Yuyu hakusho", 2.99, 0);
+        // Everything below is based with comparator or compareTo
         // lower returs the immediate lower value <
         // floor returs the immediate lower or equals values <=
         // higher returns the immediate higher value >

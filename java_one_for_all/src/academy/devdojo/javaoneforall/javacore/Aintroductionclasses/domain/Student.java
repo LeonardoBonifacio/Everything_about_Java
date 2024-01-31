@@ -14,7 +14,7 @@ public class Student {// Create our class Student
     // little things, most recomended is that the class only do
     // one thing), highly maintainable code it's bring to you
 
-    // never do things like this, chose in other hands create a new Class for the
+    // never do things like this, choose in other hands create a new Class for the
     // Professor objects
     // public String nameProfessor = "Zoro";
     // public int ageProfessor;

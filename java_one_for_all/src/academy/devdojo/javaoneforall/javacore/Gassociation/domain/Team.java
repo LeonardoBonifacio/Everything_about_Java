@@ -9,7 +9,7 @@ public class Team {
     }
 
     public Team(String name, Player[] players){
-        this.name = name;
+        this(name);
         this.players = players;
     }
 

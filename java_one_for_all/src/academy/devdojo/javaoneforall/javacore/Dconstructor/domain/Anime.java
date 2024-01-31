@@ -26,7 +26,7 @@ public class Anime {
         // constructor method
         // this() <- under is must be never used outside of the constructor body
         this();// this a call to another constructor inside this constructor, and call
-               // constructor must be the first thing that you put in your constructor
+               // another constructor must be the first thing that you put in your constructor
         System.out.println("Inside four args constructor");
         this.name = name;
         this.type = type;

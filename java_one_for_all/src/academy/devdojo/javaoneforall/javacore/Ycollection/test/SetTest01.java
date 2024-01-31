@@ -8,9 +8,11 @@ import academy.devdojo.javaoneforall.javacore.Ycollection.domain.Manga;
 
 public class SetTest01 {
     public static void main(String[] args) {
-        // Set is like in math, not accept duplications(set use equals and hashcode to verify this)
+        // Set is like in math, not accept duplications(set use method compareTo or one
+        // Comparator provide by us to verify this)
         // hashSet use the hash code to have all the elements inside sorted
-        // Set has not index(like a normal array or ArrayList), so we have to iterate over it with for each
+        // Set has not index(like a normal array or ArrayList), so we have to iterate
+        // over it with for each
         // and not keep the order of the inserction
         Set<Manga> mangas = new HashSet<>();
         mangas.add(new Manga(5L, "Pokemon", 19.99, 0));
@@ -25,7 +27,7 @@ public class SetTest01 {
 
         System.out.println("------------------");
 
-        // for keep the order of inserction you have to use LinkedHashSet
+        // for keep the order of inserction all  you have to do is use LinkedHashSet
         Set<Manga> mangas2 = new LinkedHashSet<>();
         mangas2.add(new Manga(5L, "Pokemon", 19.99, 0));
         mangas2.add(new Manga(3L, "Hellsing ultimate", 59.99, 5));

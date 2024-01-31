@@ -26,7 +26,7 @@ public class Anime {
             this.episodes[i] = i + 1;
         }
 
-        // one convention that the initialization block must be after the atributes must
+        // one convention that the initialization block must be after the atributes most
         // of the time you are using to initialize them or/and before the constructor
         // because it will be executed for all constructors
     }

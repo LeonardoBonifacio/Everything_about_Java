@@ -59,7 +59,7 @@ public class Calculator {
     public void sumVarArgs(double value, int... numbers) {
         // syntax of varArgs it's basically this three points after
         // the type of the variable
-        // you cannot have two varArgs becuase how would java knows when to stop and
+        // you cannot have two varArgs because how would java knows when to stop and
         // start in the next one
         // if you want to have multiple paramets they must be come before the varArgs
         // parameters

@@ -4,7 +4,7 @@ public class Employee {
     private String name;
     private int age;
     private double[] salarys;
-    private double average;
+    private double average = 0;
 
     public void print() {
         System.out.println("-------------------------------------------------");
@@ -26,9 +26,9 @@ public class Employee {
             return;
 
         for (double salary : salarys) {
-            average += salary;
+            this.average += salary;
         }
-        average /= salarys.length;
+        this.average /= salarys.length;
         System.out.println("The average of the salary is: " + average);
         System.out.println("-------------------------------------------------");
 
