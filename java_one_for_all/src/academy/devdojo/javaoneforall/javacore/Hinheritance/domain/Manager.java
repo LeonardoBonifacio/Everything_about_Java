@@ -23,7 +23,7 @@ public class Manager extends Employee {
 
     public Manager(String name) {
         super(name);// this supper is calling exatcly the same constructor which already
-                    // exist in our super class(Emplyess)
+                    // exist in our super class(Employee)
                     // and as all constructor this statement must be the first statement in a
                     // constructor
         System.out.println("Inside Manager constructor");

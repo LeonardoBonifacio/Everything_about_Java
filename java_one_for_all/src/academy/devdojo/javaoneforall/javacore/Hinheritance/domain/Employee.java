@@ -31,7 +31,7 @@ public class Employee extends Object {// Class Object is the root of the class h
 
     public Employee(String name) {
         super();// even though you don't write this super constructor it will be called
-                // automaticaly in every class because all class are sub classe of Class object
+                // automaticaly in every class because all class are subclass of Class object
         System.out.println("Inside Employee constructor");
         this.name = name;
     }

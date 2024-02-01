@@ -7,7 +7,7 @@ public class Anime {
         this.name = name;
     }
 
-    // for make you actually is overrading a method, put this keyword above before
+    // for make sure that you are  actually  overrading a method, put this keyword above before
     // the whole body of the method
     @Override
     public String toString() {
@@ -15,7 +15,7 @@ public class Anime {
     }
 
     // since we have available methods for us coming from Class object we can
-    // overwrite and them this behavior will now
+    // override then and  this behavior will now
     // belong to the Anime class(or the class that you are working)
     // one of the rules for overrading is: you have to have exactly the same name
     // you cannot have diferent names and

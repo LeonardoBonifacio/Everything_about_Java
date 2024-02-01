@@ -7,7 +7,7 @@ import academy.devdojo.javaoneforall.javacore.Kenumaration.domain.PaymentType;
 public class CustomerTest01 {
     public static void main(String[] args) {
         // passing attributes(objects) from the Enumeration CustomerType(COMPANY and INDIVIDUAL)
-        // passing attributes(objects) from the Enumeration PaymentType(CREDIT, DEBIT, MONEY, PIX)
+        // passing attributes(objects) from the Enumeration PaymentType(CREDIT, DEBIT)
         Customer customer1 = new Customer("Tsubasa", CustomerType.INDIVIDUAL, PaymentType.CREDIT);
         Customer customer2 = new Customer("Akira", CustomerType.COMPANY, PaymentType.DEBIT);
         // only objects which pass for the validation of data inside the constructor are

@@ -36,11 +36,11 @@ public class Car {
     // blocks)
     // the conventions for the name is all the words uppercase and separated by _
 
-    // this method(print) can never be overriden(which means that this print ever
-    // will be like this, and anyone can change the print behavior in any of the
+    // this method(print) can never be overriden(which means that this print will ever
+    //  be like this, and anyone can change the print behavior in any of the
     // subclass)
     // this class could be extended(because he's not final) but the functionalities
-    // of the print method should remain the same as the super class
+    // of the print method should remain the same as the super class 
     public final void print() {
         System.out.println(this.name);
     }
@@ -56,8 +56,8 @@ public class Car {
     // billion jvms running all over the world , and imagine if you could not get or
     // expect the behavior of the string class(since he's  one of the most
     // important class in java and they should never changed, the way that strings
-    // they behave in the jvm should never changed)
-    // if you are abble to extend the string class you could change any of the
+    // behave in the jvm should never changed)
+    // if you are able to extend the string class you could change any of the
     // methods that we have available
     // that's why the String class has final modifier(meaning that you can never
     // extend and never change the behavior)

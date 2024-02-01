@@ -17,7 +17,7 @@ public abstract class Employee extends Person {
     // Employee will going to inheritance
     // in this scenario Class Person is GrandFather
     // Class Employee is Father
-    // and Class Manager and Developer are son
+    // and Class Manager and Developer are sons
 
     // what's the purpose of abstract classe?
     // basically abstract classes they were created to improve the desigh of your
