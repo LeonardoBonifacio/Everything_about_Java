@@ -9,10 +9,6 @@ public class WildCardTest02 {
         List<Cat> cats = List.of(new Cat(), new Cat());
         List<Animal> animals = new ArrayList<>(2);
         List<Object> objects = new ArrayList<>();
-        // we cannot do this , because list only accpet the exactly type that you are
-        // telleing that she is going to receive
-        // printConsult(dogs);
-        // printConsult(cats);
 
         printConsult(dogs);
         printConsult(cats);
@@ -22,8 +18,8 @@ public class WildCardTest02 {
     }
 
     // here was telling for this method that i accept list of Animal, one the
-    // especifc Type of Animal and below in your inheritance Three(in this Case only Cat or Dog or Animal)
-    // Animal to below
+    // especifc Type of Animal and below in your inheritance Tree(in this Case only Cat or Dog or Animal)
+    // Animal to below, only class which has Animal as superClass or Class Animal itself
     // the wildCard was created to solve exactly this problem, where you want to
     // pass another type
     // that you as developer know for sure that you are doing the right thing
@@ -38,6 +34,7 @@ public class WildCardTest02 {
         // java will not know if what i put in that list is going to be one object that
         // extend the SuperClass that i put in the WildCard(Dog, Cat or Animal)
         // so this line is not allowed animals.add(new Dog());
+        
         System.out.println("-----------");
 
         for (Animal animal : animals) {
@@ -51,7 +48,7 @@ public class WildCardTest02 {
     // private static void printConsulDog(List<? super Dog> animals) {
     //     System.out.println("-----------");
 
-    //     // but because i don't know for sure if the list is a list of Dog or something(could be Simply Object or Animal)
+    //     // but because i don't know for sure what kinda of list this is (could be Simply Object or Animal)
     //     // i need to do this verification above for avoiding erros
     //     // putting object for itterating this list because Objects is in the top of the
     //     // inheritance three

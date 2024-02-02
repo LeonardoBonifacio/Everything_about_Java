@@ -18,7 +18,7 @@ public class GenericsTest01 {
         }
 
         add(list, new Customer("Leoncio"));// we must never do things like this, because this is going to be confusing
-                                           // passing one list of String for one method that adds objects in the list
+                                           // passing one list of String for one method that adds objects in this list
                                            // that you are passing, if we use one for each we can't use the especifc
                                            // type of the elements anymore, because one Object most default(Object) gone
                                            // add

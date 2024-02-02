@@ -4,16 +4,14 @@ package academy.devdojo.javaoneforall.javacore.Minterfaces.domain;
 // you (like abstract class) also cannot create instance of interfaces
 public interface DataLoader {
     // all the attributes inside interface are public, static and final by default
-    public static final int MAX_DATA_SIZE = 10;
+    public static final int MAX_DATA_SIZE = 10;// like this
 
     // the purpose of the interfaces(type special of the class in the end) is to be
-    // implemented not extendind like classes
-    // and subclasses
+    // implemented not extended like class and subclasses
     // by default all the methods that you written in a Interface will be considered
     // public and abstract
     // this means that we can only must provide for the method which type of return
-    // is
-    // going to have and your name
+    // is going to have and your name
     // and when you are overriding one method of one interface you cannot change the
     // access modifier this method
     // this cannot be more restrictive(like access modifier package(default) or
@@ -23,7 +21,7 @@ public interface DataLoader {
     // when in inherited a method from a SuperClass you can overriding in a SubClass
     // and always makes this method less restrictive, but you cannot make it more
     // restrictive
-    void load();
+    void load();// every method is public and abstract
 
     // until java 8 all the methods inside in one interface must be abstract
     // and this kind put a huge break or a huge wall into developement at the
@@ -46,7 +44,7 @@ public interface DataLoader {
     // case here DataLoader and method checkPermission), will not have to do it, it
     // will be optional(because default keyword automatically transfer the method for
     // all classes that may implementing this, like inheritance, if the Classes want
-    // to override and implement and your own way they can do, but it's not
+    // to override and implement and add your own way they can do, but it's not
     // mandatory )
     
     // it's transformer in a concrete method(public) that can be implement and
