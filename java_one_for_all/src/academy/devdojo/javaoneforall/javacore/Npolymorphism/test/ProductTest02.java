@@ -6,7 +6,7 @@ import academy.devdojo.javaoneforall.javacore.Npolymorphism.domain.Tomato;
 
 public class ProductTest02 {
     public static void main(String[] args) {
-        // here we hava a reference variable of one type and one object of one diferent type(even though the object is inherited all
+        // here we have a reference variable of one type and one object of one diferent type(even though the object is inherited all
         // of the reference variable(Product))
         // This is call widening cast(when we send a subclass object to a superclass reference variable)
         Product product = new Computer("Ryzen 9 ", 1000);
@@ -21,11 +21,7 @@ public class ProductTest02 {
         System.out.println(product2.getPrice());
         System.out.println(product2.calculateTaxPrice());
 
-
-        
-
-
-
+    
         
     }
 }

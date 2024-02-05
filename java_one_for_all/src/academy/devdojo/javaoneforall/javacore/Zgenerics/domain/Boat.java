@@ -2,10 +2,10 @@ package academy.devdojo.javaoneforall.javacore.Zgenerics.domain;
 
 import java.util.Objects;
 
-public class Boat implements Comparable<Boat>{
+public class Boat implements Comparable<Boat> {
     private String name;
-    
-    public Boat(String name){
+
+    public Boat(String name) {
         this.name = name;
     }
 
@@ -24,13 +24,16 @@ public class Boat implements Comparable<Boat>{
         return Objects.hash(this.name);
     }
 
-     @Override
+    @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || this.getClass() != obj.getClass()) return false;
-        Boat otherCustomer = (Boat) obj;
-        return Objects.equals(this.name, otherCustomer.getName());
+        if (this == obj)
+            return true;
+        if (obj == null || this.getClass() != obj.getClass())
+            return false;
+        Boat otherBoat = (Boat) obj;
+        return Objects.equals(this.name, otherBoat.getName());
     }
+
     public String getName() {
         return name;
     }

@@ -45,8 +45,9 @@ public class RepositorTest01 {
         }
         // small example
         // List is a interface and there are several classes that are providing
-        // implementation for the list, so you can have
-        // different types of list(arrayList, linkedList, etc)
+        // implementation for the List, so you can have
+        // different types of List(arrayList, linkedList, etc)
+        // with diferents types of implementation for the all methods inside the interface List
     }
 
 }

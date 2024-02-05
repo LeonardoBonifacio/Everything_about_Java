@@ -14,8 +14,8 @@ public class GenericMethodsTest01 {
     // this is the syntax for methods generics, the diamond<> with the 'type' is put
     // before the return of the method
     // and this method accept whatever type of Object(that must extends Comparable
-    // or be Comparable itself, and this comparable can be of the type of T or of
-    // your superClass, remember ? super T),for put in
+    // or be Comparable itself(in this case) and this comparable can be of the type of T or of
+    // your superClass(also in this case), remember ? super T),for put in
     // the Generic Type of the list Created
     private static <T extends Comparable<? super T>> List<T> createArrayWithOneObject(T t) {
         return List.of(t);

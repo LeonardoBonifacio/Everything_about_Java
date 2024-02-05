@@ -14,7 +14,7 @@ public class GenericsTest01 {
         list.add("Midorya");
 
         for (String string : list) {
-            System.out.println(string);
+            System.out.println(string.toString());
         }
 
         add(list, new Customer("Leoncio"));// we must never do things like this, because this is going to be confusing
