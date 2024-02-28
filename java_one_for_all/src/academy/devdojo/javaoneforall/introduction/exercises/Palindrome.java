@@ -8,7 +8,7 @@ public class Palindrome {
         String fiveInteger;
 
         while (true) {
-            System.out.print("Put a number with five numbers: ");
+            System.out.print("Put a number with five digits: ");
             fiveInteger = scanner.next();
             if (fiveInteger.length() != 5) {
                 System.out.println("Please put a number with five numbers only:");

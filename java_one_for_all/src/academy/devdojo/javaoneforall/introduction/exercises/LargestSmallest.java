@@ -51,7 +51,6 @@ public class LargestSmallest {
         for(int num : numbers){
            System.out.println(num);
         }
-        System.out.println(numbers);
         System.out.println("The largest number is: " + largestNumber);
         System.out.println("The smallest number is: " + smallestNumber);
     }    

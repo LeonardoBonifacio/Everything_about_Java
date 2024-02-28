@@ -28,7 +28,7 @@ public class Craps {
         int gamesLostOntheFirstRollAndAfter = 0;
         Status gameStatus;
 
-        for (int i = 1; i <= 1000; i++) {
+        for (int i = 1; i <= 100; i++) {
             
             int sumOfDice = rollDice();
     

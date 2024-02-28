@@ -13,7 +13,7 @@ public class Class06LoopStatements03 {
                 System.out.println(i);
             }
             else{
-                break; // break only works inside the loops Statements block  and switc case structure
+                break; // break only works inside the loops Statements block  and switch case structure
             }
             System.out.println("Outside if " + i);
         }

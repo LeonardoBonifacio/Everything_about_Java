@@ -27,6 +27,19 @@ public class HealthProfile {
         this.imc = calculatesI_M_C();
     }
 
+    public void printAll(){
+        System.out.println("First Name is: " + this.getFirstName());
+        System.out.println("Last Name is: " + this.getLastName());
+        System.out.println("Gender is: " + this.getGender());
+        System.out.println("Date of birth is: " + this.getDateOfBirth());
+        System.out.println("Height is: " + this.getHeight());
+        System.out.println("Weight is: " + this.getWeight());
+        System.out.println("Person's age is: " + this.calculatesAges());
+        System.out.println("Person's IMC is: " + this.calculatesI_M_C());
+        System.out.println("Person's maximum heart care rate is: " + this.calculatesMaximumHeartRate());
+        System.out.println("Person's target-heart-rate-range is: " + this.calculatesTargetHeartRate());
+    }
+
 
     public double calculatesI_M_C(){
         this.imc = weight/(height * height);

@@ -10,8 +10,8 @@ public class Input{
         int number2 = input.nextInt();
         System.out.print("Put number 3: ");
         int number3 = input.nextInt();
-        int sum = number1 + number2;
-        System.out.println("Your sum is : " + (number1 + number2) +  " or " + sum);
+        int sum = number1 + number2 + number3;
+        System.out.println("Your sum is : " + (number1 + number2 + number3) +  " or " + sum);
         System.out.println("The produtc of " + number1 + " x " + number2 + " x " + number3 +  " = " + (number1 * number2 * number3));
         if (sum != 7) {
             System.out.println("The variable sum is not equal to 7");

@@ -12,7 +12,7 @@ public class DuplicateElimination {
             System.out.print("Please insert five numbers between 10 and 100 and not duplicate -> ");
             numberRead = input.nextInt();
             if (numberRead < 10 || numberRead > 100 || fiveNumbers.contains(numberRead)) {
-                System.out.println("Please put one number follow the rules");
+                System.out.println("Please put one number that follow the rules");
             }
             else{
                 fiveNumbers.add(numberRead);

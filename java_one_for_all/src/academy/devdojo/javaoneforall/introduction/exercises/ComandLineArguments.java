@@ -10,16 +10,14 @@ public class ComandLineArguments {
         }
         System.out.println("The sum of the numbers pass are: " + sum);
 
-
-
-
         // int sizeOfArray = Integer.parseInt(args[0]);
         // Integer[] arrayInteger = new Integer[sizeOfArray];
 
         // for (int i = 0; i < arrayInteger.length; i++) {
-        //     SecureRandom randomNumber = new SecureRandom();
-        //     arrayInteger[i] = (1 * sizeOfArray) + 12 * randomNumber.nextInt(0, 900);
-        //     System.out.println("Array integer in position -> [" + i + "] -> kept the number -> " + arrayInteger[i]);
+        // SecureRandom randomNumber = new SecureRandom();
+        // arrayInteger[i] = (1 * sizeOfArray) + 12 * randomNumber.nextInt(0, 900);
+        // System.out.println("Array integer in position -> [" + i + "] -> kept the
+        // number -> " + arrayInteger[i]);
         // }
 
         // Run by cmd and pass 30 as argument

@@ -26,13 +26,9 @@ public class AirlineReservationsSystem {
         System.out.println("All seats are occupied. The next flight leaves in 3 hours.");
     }
 
-
-
     private static void displayOptions() {
         System.out.println("Please type 1 for First Class or 2 for Economy.");
     }
-
-
 
     private static int assignSeat(boolean[] seatsOccupied, int choice) {
         int startSeat = (choice == 1) ? 0 : 5;
@@ -59,15 +55,9 @@ public class AirlineReservationsSystem {
         }
     }
 
-
-
-
     private static void displayBoardingPass(int seatNumber) {
         System.out.println("Boarding pass for seat number " + seatNumber + ".");
     }
-
-
-
 
     private static int countOccupiedSeats(boolean[] seatsOccupied) {
         int count = 0;

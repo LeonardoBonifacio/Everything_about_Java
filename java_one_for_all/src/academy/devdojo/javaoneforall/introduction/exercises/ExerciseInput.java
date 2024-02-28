@@ -6,8 +6,8 @@ import java.util.Scanner;
  * The military needs a system to classify people joining the force
  * We need the system to accept the following data
  * Gender (the system should somehow store M or F only) and age.
- * If the gender is M and afe is >= 18, the system should print "Mandatory Service"
- * If the gender is M and the age is < 18, the system should print "Service not allowed dor people nuder 18"
+ * If the gender is M and age is >= 18, the system should print "Mandatory Service"
+ * If the gender is M and the age is < 18, the system should print "Service not allowed for people under 18"
  * If the gender is F and age is >= 18, the system should ask "would you like to enlist?"
  * If the gender is F and age is < 18 the sustem should print  "Service not allowed for people under 18"
  */

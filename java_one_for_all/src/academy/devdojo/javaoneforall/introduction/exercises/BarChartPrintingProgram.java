@@ -16,7 +16,7 @@ public class BarChartPrintingProgram {
             }
             else{
                 contNumber++;
-                System.out.print(number);
+                System.out.println(number);
                 for (int i = 1; i <= number; i++) {
                     System.out.print("*");
                 }

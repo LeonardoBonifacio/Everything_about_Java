@@ -20,17 +20,29 @@ public class ComputerAssistedInstruction {
         int respsRandom = generatorNumber.nextInt(4);
         while (true) {
             System.out.println("Lets play");
-            System.out.print("Which dificult? [1] - For Easy [2] - For Hard -> ");
+            System.out.println("Which dificult?");
+            System.out.println("[1] - For Easy");
+            System.out.println("[2] - For Hard ");
+            System.out.println("[3] - For Stop");
+            System.out.print("-> ");
             int dificult = input.nextInt();
             if (dificult == 1) {
                 number1 = 1 + generatorNumber.nextInt(11);
                 number2 = 1 + generatorNumber.nextInt(11);
-            } else {
+            } else if (dificult == 2) {
                 number1 = 1 + generatorNumber.nextInt(99);
                 number2 = 1 + generatorNumber.nextInt(99);
+            } else {
+                number1 = 0;
+                number2 = 0;
+                break;
             }
-            System.out.print(
-                    "Do you wanna play with: [1] - Addiction [2] - Subtraction [3] - Division [4] - Multiplication -> ");
+            System.out.println("Do you wanna play with");
+            System.out.println("[1] - Addiction");
+            System.out.println("[2] - Subtraction");
+            System.out.println("[3] - Division");
+            System.out.println("[4] - Multiplication ");
+            System.out.print("-> ");
             int choseArithmeticProblem = input.nextInt();
             if (choseArithmeticProblem == 1) {
                 result = number1 + number2;
@@ -99,6 +111,7 @@ public class ComputerAssistedInstruction {
             }
 
         }
+        System.out.println("Program finalized!");
     }
 
     public static boolean printMessageAfterTenResp(int qtdAnswerIncorrect, int qtdAnswercorrect) {
@@ -107,7 +120,7 @@ public class ComputerAssistedInstruction {
                 System.out.println("Congratulations, you are ready to go the next level!");
             }
             if (qtdAnswerIncorrect >= 7) {
-                System.out.println("PLease ask your teacher for extra help!");
+                System.out.println("Please ask your teacher for extra help!");
             }
             return true;
         }

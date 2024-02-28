@@ -3,7 +3,7 @@ package academy.devdojo.javaoneforall.introduction.content;
 public class Class06LoopStatements01 {
     public static void main(String[] args) {
         // LoopStatements -> while, do-while and for
-        int counter = 20;
+        int counter = 1;
         while (counter < 10) {// <-  everything put here need results in true to keep running this while statement
             System.out.println(++counter);
         }

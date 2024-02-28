@@ -4,15 +4,14 @@ import java.security.SecureRandom;
 import java.util.Scanner;
 
 public class CoinTossing {
-    public enum Coin{
+    
+    public enum Coin {
         HEADS(1),
         TAILS(2);
 
-
         private int side;
 
-
-        Coin(int side){
+        Coin(int side) {
             this.side = side;
             this.side = side;
         }
@@ -33,19 +32,17 @@ public class CoinTossing {
             if (option == 1) {
                 numberBetween1And2 = 1 + numberGenerator.nextInt(2);
                 System.out.println("Your coin tossing is " + tossCoin());
-            }
-            else{
+            } else {
                 System.out.println("QUITING FROM THE GAME");
                 break;
             }
         }
     }
 
-    public static Coin tossCoin(){
+    public static Coin tossCoin() {
         if (CoinTossing.numberBetween1And2 == 1) {
             return Coin.HEADS;
-        }
-        else{
+        } else {
             return Coin.TAILS;
         }
     }

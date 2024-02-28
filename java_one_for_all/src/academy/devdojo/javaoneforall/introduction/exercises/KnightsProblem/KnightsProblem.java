@@ -39,7 +39,7 @@ public class KnightsProblem {
                     System.out.print("[" + boardChess[row][column] + "]");    
                 }
                 else{
-                    System.out.print("[ " + boardChess[row][column] + " ]");
+                    System.out.print(" [" + boardChess[row][column] + "] ");
                 }
             }
             System.out.println();

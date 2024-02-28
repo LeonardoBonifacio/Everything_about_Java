@@ -31,7 +31,7 @@ public class HeartRates {
     }
 
     public int calculatesPersonAges(){
-        int presentYear = 2023;
+        int presentYear = 2024;
         this.age = presentYear - this.yearOfBirth;
         return this.age;
     }

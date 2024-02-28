@@ -104,7 +104,7 @@ public class TurtleGraphics {
                             }
                         }
                         else{
-                            System.out.println("Please choose between moveup or down and right or left.");
+                            System.out.println("Please choose between move up or down and right or left.");
                         }
                     }
                     else if (isPenUp) {
@@ -156,7 +156,7 @@ public class TurtleGraphics {
                 case 0:
                     break;
                 default:
-                    System.out.println("Option invalid, plese read the Menu carefully");
+                    System.out.println("Option invalid, please read the Menu carefully");
                     break;
             }
         }

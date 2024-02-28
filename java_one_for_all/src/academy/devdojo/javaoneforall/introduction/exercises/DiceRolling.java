@@ -26,7 +26,7 @@ public class DiceRolling {
             array[dice1 + dice2]++;
 
         }
-        System.out.println("For playing this dices " + numberOfRolls + " times , you get this information, please wait.");
+        System.out.println("For playing this dices " + numberOfRolls + " times , you get this information.");
         for (int i = 2; i < array.length; i++) {
             System.out.println("Numbers of Sums wich result in ->  " + i + "  ->  "+ array[i]);
         }

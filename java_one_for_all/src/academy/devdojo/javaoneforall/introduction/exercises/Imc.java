@@ -6,7 +6,7 @@ public class Imc {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Put your altura: ");
+        System.out.print("Put your height: ");
         double altura = input.nextDouble();
 
         System.out.print("Put your weight: ");

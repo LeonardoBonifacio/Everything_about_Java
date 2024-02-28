@@ -5,8 +5,7 @@ public class Employee {
     String lastName;
     double monthlySalary;
 
-
-    public Employee(String firstName, String lastName, double monthlySalary){
+    public Employee(String firstName, String lastName, double monthlySalary) {
         if (firstName.length() > 0) {
             this.firstName = firstName;
         }
@@ -18,39 +17,40 @@ public class Employee {
         }
     }
 
-    public void setFirstName(String firstName){
+    public void setFirstName(String firstName) {
         if (firstName.length() > 0) {
             this.firstName = firstName;
         }
     }
 
-    public void setLirstName(String lastName){
+    public void setLirstName(String lastName) {
         if (lastName.length() > 0) {
             this.lastName = lastName;
         }
     }
 
-    public void setMonthlySalary(double monthlySalary){
+    public void setMonthlySalary(double monthlySalary) {
         if (monthlySalary > 0) {
             this.monthlySalary = monthlySalary;
         }
     }
 
-    public String getFirstName(){
+    public String getFirstName() {
         return this.firstName;
     }
 
-    public String getLastName(){
+    public String getLastName() {
         return this.lastName;
     }
 
-    public double getMonthlySalary(){
+    public double getMonthlySalary() {
         return this.monthlySalary;
     }
 
-    public void displayEmployeeYearSalary(){
+    public void displayEmployeeYearSalary() {
         if (this.monthlySalary > 0) {
-            System.out.println("The anual salary this employee(" + this.firstName + " " + lastName +  ") is: " + this.monthlySalary * 12);
+            System.out.println("The anual salary this employee(" + this.firstName + " " + lastName + ") is: "
+                    + this.monthlySalary * 12);
         }
     }
 }

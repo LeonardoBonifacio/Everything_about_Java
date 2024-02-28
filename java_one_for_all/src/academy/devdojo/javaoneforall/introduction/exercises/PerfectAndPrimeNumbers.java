@@ -7,11 +7,11 @@ public class PerfectAndPrimeNumbers {
     public static void main(String[] args) {
         int number = 28;
 
-        //perfectNumber(number);
+        // perfectNumber(number);
 
-        // for (int i = 1; i <= 100000; i++) {
-        // perfectNumber(i);
-        // }
+        for (int i = 1; i <= 100000; i++) {
+            perfectNumber(i);
+        }
 
         for (int i = 1; i <= 1000; i++) {
             primeNumber(i);

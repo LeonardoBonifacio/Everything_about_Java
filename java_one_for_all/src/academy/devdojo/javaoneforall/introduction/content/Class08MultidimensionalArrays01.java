@@ -4,7 +4,7 @@ public class Class08MultidimensionalArrays01 {
     public static void main(String[] args) {
         // Syntax of array of arrays
         int[][] days = new int[3][3];// the base array you need to write the size inside the first []
-        // this array abover can be draw like this days = [ [ [0, 0, 0] ], [ [0, 0, 0] ], [ [0, 0, 0] ] ]
+        // this array abover can be draw like this days = [ [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 0 ] ]
         // behaves the same way which list of lists in python
         days[0][0] = 31;
         days[0][1] = 29;
@@ -32,7 +32,7 @@ public class Class08MultidimensionalArrays01 {
 
         /*
         int[][][] arrayOfAges = new int[3][3][3];
-        // drawing this  [[[[0,0,0], [0,0,0], [0,0,0]]], [[[0,0,0], [0,0,0], [0,0,0]]], [[[0,0,0],[0,0,0],[0,0,0]]]]
+        // drawing this  [[[0,0,0], [0,0,0], [0,0,0]]], [[0,0,0], [0,0,0], [0,0,0]], [[[0,0,0],[0,0,0],[0,0,0]]]
         for (int j = 0; j < arrayOfAges.length; j++) {
             for (int j2 = 0; j2 < arrayOfAges[j].length; j2++) {
                 for (int k = 0; k < arrayOfAges[j][j2].length; k++) {
