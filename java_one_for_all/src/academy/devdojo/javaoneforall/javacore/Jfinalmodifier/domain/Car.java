@@ -23,7 +23,7 @@ public class Car {
     // inside this object of class Buyer
 
     static {
-        SPEED_LIMIT = 249 + 1;
+        SPEED_LIMIT = 250;
         // if we have one init block or one static init block we cannot initialized the
         // constant
         // variables in our constructor , because the blocks loads everthing before the

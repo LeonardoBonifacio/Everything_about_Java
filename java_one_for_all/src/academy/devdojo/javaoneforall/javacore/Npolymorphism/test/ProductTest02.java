@@ -20,7 +20,6 @@ public class ProductTest02 {
         System.out.println(product2.getName());
         System.out.println(product2.getPrice());
         System.out.println(product2.calculateTaxPrice());
-
     
         
     }

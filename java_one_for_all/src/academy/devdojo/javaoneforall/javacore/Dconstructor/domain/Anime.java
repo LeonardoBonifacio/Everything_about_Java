@@ -3,9 +3,9 @@ package academy.devdojo.javaoneforall.javacore.Dconstructor.domain;
 public class Anime {
     private String name;
     private String type;
-    private int episodes;
     private String status;
     private String studio;
+    private int episodes;
 
     // this under is how we overloading constructor, but there are little rules
     // first rule: you can never use 'this()' outside of the constructor body
@@ -16,7 +16,7 @@ public class Anime {
     // you(one with no parameters)
     public Anime(String name, String type, String status, int episodes) {
         // constructor methods has nothing to return
-        // beacuse the only purpose of he is initialize
+        // beacuse the only purpose of they is initialize
         // or constructing an object
         // the constructor is execute before any method
         // if i put parameters in the constructor they have to be passed

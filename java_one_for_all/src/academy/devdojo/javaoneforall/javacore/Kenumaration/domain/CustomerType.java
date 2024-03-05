@@ -53,3 +53,4 @@ public enum CustomerType {
         return this.reportValue;
     }
 }
+

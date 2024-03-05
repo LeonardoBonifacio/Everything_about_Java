@@ -28,7 +28,7 @@ public class Anime {
             // static int he begining
             // when we do this, this block here will be executed only once , basically when
             // the jvm is loading this Anime class
-            // it will executed all the static init blocksit has in it
+            // it will executed all the static init blocks it has in it
             // the static modifier will tell the jvm that you should load these either
             // attributes or methods or init blocks that are static only once
         System.out.println("Inside init block static 1 ");

@@ -20,7 +20,7 @@ public class InheritanceTest01 {
         // like this employee.name
         // because the attributes are proctected
         // which means that only sub class and class in the same package can do this
-        // for access the attributes now it's necesary use the getter and setter methods
+        // for access the attributes now it's necessary use the getter and setter methods
 
         System.out.println("-------------------------------");
 

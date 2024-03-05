@@ -10,7 +10,7 @@ public class CalculatorTest02 {
         // when you create which you're going to pass for your methods/functions this is
         // known by parameters(like when create a method)
         calculator.multiplyTwoNumbers(10, 7);
-        // this function/method requires two arguments, if i don't give us it's
+        // this function/method requires two arguments, if i don't give they it's
         // raise a compilation error
         // you can only send arguments which are the same type that your parameters
         // created, and in the same quantidity

@@ -33,8 +33,7 @@ public class Employee {
         System.out.println("-------------------------------------------------");
 
     }
-
-    // getter and setter can actually be done automaticaly by ide, pressing in a
+// getter and setter can actually be done automaticaly by ide, pressing in a
     // blank field crtl + espace and search for the set and get method which you
     // want
     public int getAge() {

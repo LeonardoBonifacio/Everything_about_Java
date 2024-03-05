@@ -18,7 +18,7 @@ public class Seminars {
     }
 
     public void print(){
-        System.out.println("This title seminar is: " + this.title);
+        System.out.println("This seminar title is: " + this.title);
         System.out.println("The place where this seminar will occur is: " + this.place.getAddress());
         if (this.students != null && this.students.length > 0) {
             for (Student student : students) {

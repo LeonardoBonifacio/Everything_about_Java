@@ -5,7 +5,7 @@ import academy.devdojo.javaoneforall.javacore.Ioverriding.domain.Anime;
 public class AnimeTest01 {
     public static void main(String[] args) {
         Anime anime = new Anime("Dr: Stone");
-        // every time you call a reference variable inside the print you are goingo to get a behavior of the method
+        // every time you call a reference variable inside the print you are going to get a behavior of the method
         // toString()
         // public String toString() {
         //     return getClass().getName() + "@" + Integer.toHexString(hashCode());

@@ -24,7 +24,7 @@ public class CustomerTest01 {
 
         // All enumerations will provide to you some methods like:
         // values() -> that will return all the enumerations inside this Class
-        // valuesOf() -> that will returnt the enumaration which contain this values
+        // valuesOf() -> that will return the enumaration which contain this values
 
         CustomerType customerType = CustomerType.valueOf("INDIVIDUAL");
         System.out.println(customerType.getReportValue());

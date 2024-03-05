@@ -45,7 +45,7 @@ public interface DataLoader {
     // will be optional(because default keyword automatically transfer the method for
     // all classes that may implementing this, like inheritance, if the Classes want
     // to override and implement and add your own way they can do, but it's not
-    // mandatory )
+    // mandatory)
     
     // it's transformer in a concrete method(public) that can be implement and
     // overriding or not

@@ -23,9 +23,9 @@ public class ExceptionTest02 {
             ex.printStackTrace();
             //throw ex;
             // if you throw the exception(a checked Exception) who whatever is calling, you
-            // must put the keyword throw wiht the type
+            // must put the keyword throw with the type
             // of exception which you is sending beside of the final of the method(line 17)
-            // but if you don't whant to force who is calling this method to handle this exception
+            // but if you don't want to force who is calling this method to handle this exception
             // we can throw  a new RunTimeException avoiding to put in the final of line 17
             // one checked exception(which must be handle)
             throw new RuntimeException("Something happened when creating the file");
