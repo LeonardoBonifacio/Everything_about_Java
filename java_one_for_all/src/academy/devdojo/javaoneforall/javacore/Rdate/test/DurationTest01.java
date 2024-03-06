@@ -8,7 +8,7 @@ import java.time.LocalTime;
 public class DurationTest01 {
     public static void main(String[] args) {
         LocalDateTime now =  LocalDateTime.now();
-        LocalDateTime nowAfterTwoYearsAndNineMinutes = LocalDateTime.now().plusYears(2).plusMinutes(9);
+        LocalDateTime nowAfterTwoYearsAndNineMinutes = now.plusYears(2).plusMinutes(9);
 
         LocalTime timeNow = LocalTime.now();
         LocalTime timeNowMinus7Hours = LocalTime.now().minusHours(7);

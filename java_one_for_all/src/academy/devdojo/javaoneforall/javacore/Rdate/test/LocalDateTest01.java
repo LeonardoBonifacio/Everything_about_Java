@@ -10,7 +10,7 @@ public class LocalDateTest01 {
     public static void main(String[] args) {
         // ALWAYS PREFER TO USE LOCALDATE INSTEAD OF OTHER CLASS TO REPRESENT YOUR DATES
         // this class(LocalDate) is immutable
-        // all the changes taht you are doing in this object will always create a new
+        // all the changes that you are doing in this object will always create a new
         // object, it's basically a copy of the object that you were changing plus the change that you made
         // System.out.println(new Date());
         // System.out.println(Calendar.getInstance());

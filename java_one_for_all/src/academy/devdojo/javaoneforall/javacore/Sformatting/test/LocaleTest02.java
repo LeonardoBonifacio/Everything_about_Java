@@ -10,10 +10,13 @@ public class LocaleTest02 {
         String[] isoLanguages = Locale.getISOLanguages();
 
         
+        System.out.println();
+        
         for (String isoLanguage : isoLanguages) {
             System.out.print(isoLanguage + " ");
         }
 
+        System.out.println();
         System.out.println();
         
         for (String isoCountry : isoCountries) {

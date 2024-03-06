@@ -23,10 +23,11 @@ public class NumberFormatTest02 {
         }
 
         String stringValue = "$100,000,000.21";// for the currency numbers, we must pass the exactly string which
-                                              // we want to parse
+                                               // we want to parse
         try {
             System.out.println(nfa[0].parse(stringValue));
-        } catch (ParseException e) {
+        } 
+        catch (ParseException e) {
             e.printStackTrace();
         }
     }
