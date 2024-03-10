@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 public class PathMatcherTest01 {
     public static void main(String[] args) {
         Path path1 = Paths.get("folder/subfolder/file.bkp");
-        Path path2 = Paths.get("fodler/subfolder/file.txt");
+        Path path2 = Paths.get("folder/subfolder/file.txt");
         Path path3 = Paths.get("folder/subfolder/file.java");
         // Glob is kinda regex
         matches(path1, "glob:*.bkp");// doens't work

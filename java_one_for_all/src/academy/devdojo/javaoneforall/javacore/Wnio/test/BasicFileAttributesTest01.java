@@ -25,16 +25,16 @@ public class BasicFileAttributesTest01 {
         System.out.println();
 
         // Creating a new file in folder2 with Class Paths and interface Path
-        Path paht = Paths.get("folder2/file_path.txt");
-        if (Files.notExists(paht)) {
-            Files.createFile(paht);
+        Path path = Paths.get("folder2/file_path.txt");
+        if (Files.notExists(path)) {
+            Files.createFile(path);
         }
         // Creating a filetime from the date in the past created before
         FileTime fileTime = FileTime.from(date.toInstant(ZoneOffset.UTC));
         // Set last time modified atribbute with class Files and FileTime time
-        Files.setLastModifiedTime(paht, fileTime);
-        System.out.println(Files.isExecutable(paht));
-        System.out.println(Files.isWritable(paht));
-        System.out.println(Files.isReadable(paht));
+        Files.setLastModifiedTime(path, fileTime);
+        System.out.println(Files.isExecutable(path));
+        System.out.println(Files.isWritable(path));
+        System.out.println(Files.isReadable(path));
     }
 }

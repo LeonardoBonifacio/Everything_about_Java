@@ -4,10 +4,12 @@ import academy.devdojo.javaoneforall.javacore.Ycollection.domain.Smartphone;
 
 public class EqualsTest01 {
     public static void main(String[] args) {
-        // String name = "Leonardo Bonifácio";
-        // String name2 = new String("Leonardo Bonifácio");
-        // System.out.println(name == name2);
-        // System.out.println(name.equals(name2));
+        String name = "Leonardo Bonifácio";
+        String name2 = new String("Leonardo Bonifácio");
+        System.out.println(name == name2);
+        System.out.println(name.equals(name2));
+
+        System.out.println("----------------------");
 
         Smartphone s1 = new Smartphone("1BACN2", "Pixel");
         Smartphone s2 = new Smartphone("1BACN2", "Pixel");

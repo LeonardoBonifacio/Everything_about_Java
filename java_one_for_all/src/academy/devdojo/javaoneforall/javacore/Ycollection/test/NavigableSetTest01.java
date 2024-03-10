@@ -33,7 +33,7 @@ public class NavigableSetTest01 {
         // but if you create the Navigable set passing one Comparator in the constructor
         // it will going to work well
         // Every time you inserting(in whatever sortedSet) objects or values in this
-        // sets, the sortedSet will always do one compare the date tha you already have
+        // sets, the sortedSet will always do one compare the data that you already have
         // inside that collection and will sorted the elements accordingly
         NavigableSet<Smartphone> set = new TreeSet<>(new SmartphoneNameComparator());
         set.add(new Smartphone("123123", "LG"));
@@ -42,9 +42,9 @@ public class NavigableSetTest01 {
         System.out.println("-------------");
 
         // this TreeSet are sorted this object by price, because the override method
-        // compare in Class Manga or because this compartor which we are passing in the constructor right here
+        // compare in Class Manga or because this comparator which we are passing in the constructor right here
         // an its sorting withouth pass one Comparator, because class Manga already
-        // implements Comaparable
+        // implements Comparable
         // everything that you do with TreeSet work with the comparator that you pass in this constructor
         // or with the compareTo method that you are overriding from the interface Comparable
         NavigableSet<Manga> mangas = new TreeSet<>(new MangaPriceComparator());

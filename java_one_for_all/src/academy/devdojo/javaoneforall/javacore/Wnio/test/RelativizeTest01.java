@@ -5,7 +5,7 @@ import java.nio.file.Paths;
 
 public class RelativizeTest01 {
     public static void main(String[] args) {
-        // Given two path how do i get the extend path to one form another
+        // Given two path how do i get the extend path to one from another
         Path dir = Paths.get("/home/william");// absolute path
         Path clazz = Paths.get("/home/william/devdojo/project/Test01.java");// also one absolute Path
         Path pathToClazz = dir.relativize(clazz);
