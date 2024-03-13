@@ -7,7 +7,7 @@ import java.util.List;
 import academy.devdojo.javaoneforall.javacore.Zgenerics.domain.Car;
 
 // This class is only use one time in the program and can be created as one anonymous class 
-class CatTitleComparator implements Comparator<Car> {
+class CarTitleComparator implements Comparator<Car> {
     @Override
     public int compare(Car car1, Car car2) {
         return car1.getName().compareTo(car2.getName());

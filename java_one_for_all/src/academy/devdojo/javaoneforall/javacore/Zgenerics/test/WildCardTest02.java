@@ -16,6 +16,8 @@ public class WildCardTest02 {
         printConsultSuperAnimal(animals);
         printConsultSuperAnimal(objects);
         printConsulDog(dogs);
+        printConsulDog(animals);
+        printConsulDog(objects);
     }
 
     // here was telling for this method that i accept list of Animal, one the
