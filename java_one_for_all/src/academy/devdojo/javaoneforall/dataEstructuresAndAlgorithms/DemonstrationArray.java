@@ -1,8 +1,8 @@
 package academy.devdojo.javaoneforall.dataEstructuresAndAlgorithms;
 
-public class ArrayUtil {
+public class DemonstrationArray {
     public static void main(String[] args) {
-        ArrayUtil arrUtil = new ArrayUtil();
+        DemonstrationArray arrUtil = new DemonstrationArray();
         arrUtil.arrayDemo();
     }
 

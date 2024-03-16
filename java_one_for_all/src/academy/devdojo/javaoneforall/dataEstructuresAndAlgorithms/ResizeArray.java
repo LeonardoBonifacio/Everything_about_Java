@@ -1,8 +1,8 @@
 package academy.devdojo.javaoneforall.dataEstructuresAndAlgorithms;
 
-public class ArrayUtil2 {
+public class ResizeArray {
     public static void main(String[] args) {
-        ArrayUtil2 arrUtil = new ArrayUtil2();
+        ResizeArray arrUtil = new ResizeArray();
         int[] original = new int[] { 5, 1, 9, 10 };
         System.out.println("The size of the original array is - " + original.length);
         arrUtil.printArray(original);
@@ -19,8 +19,8 @@ public class ArrayUtil2 {
         System.out.println();
     }
 
-    public int[] resizeArray(int[] array, int capacity) {
-        int[] temp = new int[capacity];
+    public int[] resizeArray(int[] array, int newCapacity) {
+        int[] temp = new int[newCapacity];
         for (int i = 0; i < array.length; i++) {
             temp[i] = array[i];
         }
