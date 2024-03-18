@@ -25,7 +25,7 @@ public class SingleLinkedList {
         }
         System.out.println("Null");
     }
- 
+
     public int lengthOfSingleLinkedList() {
         if (head == null)
             return 0;
@@ -38,18 +38,35 @@ public class SingleLinkedList {
         return count;
     }
 
-    public void insertInTheBeginOfTheSingleLinkedList(int value){
+    public void insertInTheBeginOfTheSingleLinkedList(int value) {
         ListNode newNode = new ListNode(value);
         newNode.next = head;
         head = newNode;
     }
 
+    public void insertInTheEndOfTheSingleLinkedList(int value) {
+        ListNode newNode = new ListNode(value);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+        ListNode current = head;
+        while (current.next != null) {
+            current = current.next;
+        }
+        current.next = newNode;
+    }
+
     public static void main(String[] args) {
         SingleLinkedList sll = new SingleLinkedList();
-        // sll.head = new ListNode(10);// alocate 10 to the first space of my SingleLinkedList
-        // ListNode second = new ListNode(1); // creating the second node of my SingleLinkedList
-        // ListNode third = new ListNode(8); // creating the third node of my SingleLikedList
-        // ListNode fourth = new ListNode(11); // creating the fourth node of my SingleLinkedList
+        // sll.head = new ListNode(10);// alocate 10 to the first space of my
+        // SingleLinkedList
+        // ListNode second = new ListNode(1); // creating the second node of my
+        // SingleLinkedList
+        // ListNode third = new ListNode(8); // creating the third node of my
+        // SingleLinkedList
+        // ListNode fourth = new ListNode(11); // creating the fourth node of my
+        // SingleLinkedList
 
         // // Now we will connect them together to form a chain
         // sll.head.next = second; // 10 -> 1
@@ -60,7 +77,10 @@ public class SingleLinkedList {
         sll.insertInTheBeginOfTheSingleLinkedList(11);
         sll.insertInTheBeginOfTheSingleLinkedList(8);
         sll.insertInTheBeginOfTheSingleLinkedList(1);
-        
+
+        // Inserting elements to the end of my SingleLinkedList
+        sll.insertInTheEndOfTheSingleLinkedList(12);
+
         // Printing the elements of my SingleLinkedList
         sll.displaySingleLinkedList();
 
