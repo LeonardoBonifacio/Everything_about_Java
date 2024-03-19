@@ -57,6 +57,35 @@ public class SingleLinkedList {
         current.next = newNode;
     }
 
+    public void insertInTheGivenPositionOfTheSingleLinkedList(int data, int position) {
+        ListNode newNode = new ListNode(data);
+        if (position == 1) {
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+        int count = 1;
+        ListNode previous = head;
+        while (count < position - 1) {
+            previous = previous.next;
+            count++;
+        }
+        ListNode current = previous.next;
+        newNode.next = current;
+        previous.next = newNode;
+
+    }
+
+    public ListNode deleteFirstNode(){
+        if (head == null) {
+            return null;
+        }
+        ListNode temp = head;
+        head = head.next;
+        temp.next = null;
+        return temp;
+    }
+
     public static void main(String[] args) {
         SingleLinkedList sll = new SingleLinkedList();
         // sll.head = new ListNode(10);// alocate 10 to the first space of my
@@ -73,13 +102,26 @@ public class SingleLinkedList {
         // second.next = third; // 10 -> 1 -> 8
         // third.next = fourth; // 10 -> 1 -> 8 -> 11 -> null
 
-        // Inserting elements to the being of my SingleLikedList
-        sll.insertInTheBeginOfTheSingleLinkedList(11);
+        // Inserting elements to the begin of my SingleLikedList
+        sll.insertInTheBeginOfTheSingleLinkedList(10);
         sll.insertInTheBeginOfTheSingleLinkedList(8);
         sll.insertInTheBeginOfTheSingleLinkedList(1);
 
         // Inserting elements to the end of my SingleLinkedList
         sll.insertInTheEndOfTheSingleLinkedList(12);
+
+        // Inserting elements to a given position of my SingleLinkedList
+        sll.insertInTheGivenPositionOfTheSingleLinkedList(11, 4);
+
+        // Deleting the first node of my SingleLinkedList
+        // sll.deleteFirstNode();
+        int sizeTemp = sll.lengthOfSingleLinkedList();
+
+        sll.displaySingleLinkedList();
+        
+        for (int i = 1; i <= sizeTemp; i++) {
+            System.out.println("Delete the node -> " + sll.deleteFirstNode().data);
+        }
 
         // Printing the elements of my SingleLinkedList
         sll.displaySingleLinkedList();
