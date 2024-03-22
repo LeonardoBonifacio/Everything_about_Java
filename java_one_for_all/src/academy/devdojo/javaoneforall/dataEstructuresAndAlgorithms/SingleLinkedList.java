@@ -1,5 +1,6 @@
 package academy.devdojo.javaoneforall.dataEstructuresAndAlgorithms;
 
+
 // A singly linked list is a type of linked list that is unidirectional, that is, it can be traversed in only one direction from head to the last node (tail).
 // Each element in a linked list is called a node.A single node contains data and a pointer to the next node which helps in maintaining the structure of the list.
 //The first node is called the head;it points to the first node of the list and helps us access every other element in the list.
@@ -76,7 +77,7 @@ public class SingleLinkedList {
 
     }
 
-    public ListNode deleteFirstNode(){
+    public ListNode deleteFirstNode() {
         if (head == null) {
             return null;
         }
@@ -86,48 +87,136 @@ public class SingleLinkedList {
         return temp;
     }
 
-    public static void main(String[] args) {
-        SingleLinkedList sll = new SingleLinkedList();
-        // sll.head = new ListNode(10);// alocate 10 to the first space of my
-        // SingleLinkedList
-        // ListNode second = new ListNode(1); // creating the second node of my
-        // SingleLinkedList
-        // ListNode third = new ListNode(8); // creating the third node of my
-        // SingleLinkedList
-        // ListNode fourth = new ListNode(11); // creating the fourth node of my
-        // SingleLinkedList
+    public ListNode deleteLastNode() {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode current = head;
+        ListNode previous = null;
+        while (current.next != null) {
+            previous = current;
+            current = current.next;
+        }
+        previous.next = null; // break the chain
+        return current;
+    }
 
-        // // Now we will connect them together to form a chain
-        // sll.head.next = second; // 10 -> 1
-        // second.next = third; // 10 -> 1 -> 8
-        // third.next = fourth; // 10 -> 1 -> 8 -> 11 -> null
+    public void deleteNodeInTheGivenPositionOfTheSingleLinkedList(int position) {
+        if (position == 1) {
+            head = head.next;
+            return;
+        }
+        ListNode previous = head;
+        int count = 1;
+        while (count < position - 1) {
+            previous = previous.next;
+            count++;
+        }
+        ListNode current = previous.next;
+        previous.next = current.next;
+    }
 
-        // Inserting elements to the begin of my SingleLikedList
-        sll.insertInTheBeginOfTheSingleLinkedList(10);
-        sll.insertInTheBeginOfTheSingleLinkedList(8);
-        sll.insertInTheBeginOfTheSingleLinkedList(1);
-
-        // Inserting elements to the end of my SingleLinkedList
-        sll.insertInTheEndOfTheSingleLinkedList(12);
-
-        // Inserting elements to a given position of my SingleLinkedList
-        sll.insertInTheGivenPositionOfTheSingleLinkedList(11, 4);
-
-        // Deleting the first node of my SingleLinkedList
-        // sll.deleteFirstNode();
-        int sizeTemp = sll.lengthOfSingleLinkedList();
-
-        sll.displaySingleLinkedList();
-        
-        for (int i = 1; i <= sizeTemp; i++) {
-            System.out.println("Delete the node -> " + sll.deleteFirstNode().data);
+    public boolean isThisDataInTheSingleLinkedList(int searchKey) {
+        if (head == null) {
+            return false;
         }
 
-        // Printing the elements of my SingleLinkedList
-        sll.displaySingleLinkedList();
+        ListNode current = head;
+        while (current != null) {
+            if (current.data == searchKey) {
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
 
-        // Printing the lenght of my SingleLinkedList
-        System.out.println("The length of my SingleLinkedList is " + sll.lengthOfSingleLinkedList());
+    public ListNode reverseSingleLinkedList() {
+        if (head == null)
+            return head;
+        ListNode current = head;
+        ListNode previous = null;
+        ListNode next = null;
+        while (current != null) {
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        head = previous;
+        return head;
+    }
+
+    public ListNode getNthNodeFromTheEndOfTheSingleLinkedList(int NthNode) {
+        if (head == null)
+            return head;
+        if (NthNode <= 0 || NthNode > lengthOfSingleLinkedList())
+            throw new IllegalArgumentException("Invalid value from node position. n = " + NthNode);
+        ListNode mainPointer = head;
+        ListNode referencePointer = head;
+        int count = 0;
+        while (count < NthNode) {
+            referencePointer = referencePointer.next;
+            count++;
+        }
+
+        while (referencePointer != null) {
+            referencePointer = referencePointer.next;
+            mainPointer = mainPointer.next;
+        }
+        return mainPointer; // return the Nth node from the end of the SingleLinkedList
+    }
+
+    public void removeDuplicatesFromSortedSingleLinkedList(){
+        if (head == null) {
+            System.out.println("This SingleLinkedList don't has nodes whatsoever");
+            return;
+        }
+        ListNode current = head;
+        while (current != null && current.next != null) {
+            if (current.data == current.next.data) {
+                current.next = current.next.next;
+            }
+            else{
+                current = current.next;
+            }
+        }
+    }
+
+    public void insertNodeIntheSortedSingleLinkedList(int value){
+        if (head == null) {
+            System.out.println("This SingleLinkedList don't has nodes whatsoever");
+            return;
+        }
+        ListNode newNode = new ListNode(value);
+        ListNode current = head;
+        ListNode previous = null;
+        while (current != null && current.data < newNode.data) {
+            previous = current;
+            current = current.next;
+        }
+        newNode.next = current;
+        previous.next = newNode;
+    }
+
+    public static void main(String[] args) {
+        SingleLinkedList sll = new SingleLinkedList();
+        sll.head = new ListNode(1);// alocate 10 to the first space
+        ListNode second = new ListNode(3); // creating the second node
+        ListNode third = new ListNode(7); // creating the third node
+        ListNode fourth = new ListNode(8); // creating the fourth node
+        ListNode five = new ListNode(10); // creating the five node
+
+        // // Now we will connect them together to form a chain
+        sll.head.next = second; 
+        second.next = third; 
+        third.next = fourth; 
+        fourth.next = five; // 1 -> 3 -> 7 -> 8 -> 10 -> null
+
+        sll.displaySingleLinkedList();
+        sll.insertNodeIntheSortedSingleLinkedList(2);
+        sll.displaySingleLinkedList();
+      
     }
 
 }
