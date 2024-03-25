@@ -1,9 +1,9 @@
 package academy.devdojo.javaoneforall.dataEstructuresAndAlgorithms;
 
-
+ 
 // A singly linked list is a type of linked list that is unidirectional, that is, it can be traversed in only one direction from head to the last node (tail).
 // Each element in a linked list is called a node.A single node contains data and a pointer to the next node which helps in maintaining the structure of the list.
-//The first node is called the head;it points to the first node of the list and helps us access every other element in the list.
+// The first node is called the head;it points to the first node of the list and helps us access every other element in the list.
 // The last node,also sometimes called the tail,points to NULL which helps us in determining when the list ends.
 public class SingleLinkedList {
     private ListNode head;// first elemente of my SingleLinkedList
@@ -199,6 +199,55 @@ public class SingleLinkedList {
         previous.next = newNode;
     }
 
+    public void removeKeyFromSingleLinkedList(int key){
+        ListNode current = head;
+        ListNode temp = null;
+        while (current != null && current.data != key) {
+            temp = current;
+            current = current.next;
+        }
+        if (current == null) {
+            return;
+        }
+        temp.next = current.next;
+    }
+
+    public boolean isThereALoopInTheSingleLinkedList(){
+        ListNode fastPointer = head;
+        ListNode slowPointer = head;
+        while (fastPointer != null && fastPointer.next != null) {
+            fastPointer = fastPointer.next.next;
+            slowPointer = slowPointer.next;
+            if (fastPointer == slowPointer) {
+                return true;
+            }
+        }
+        return false;
+
+        //  sll.head.next = second; 
+        //  second.next = third; 
+        //  third.next = fourth; 
+        //  fourth.next = five; // 1 -> 3 -> 7 -> 8 -> 10 -> null
+        //  five.next = third;  // 1 -> 3 -> 7 -> 8 -> 10 
+        //                                   |__________|
+    }
+
+    public void createALoopInTheSingleLinkedList(){
+        ListNode first = new ListNode(1);
+        ListNode second = new ListNode(2);
+        ListNode third = new ListNode(3);
+        ListNode fourth = new ListNode(4);
+        ListNode fifth = new ListNode(5);
+        ListNode sixty = new ListNode(6);
+        head = first;
+        head.next = second;
+        second.next = third;
+        third.next = fourth;
+        fourth.next = fifth;
+        fifth.next = sixty;
+        sixty.next = third;
+    }
+
     public static void main(String[] args) {
         SingleLinkedList sll = new SingleLinkedList();
         sll.head = new ListNode(1);// alocate 10 to the first space
@@ -212,11 +261,11 @@ public class SingleLinkedList {
         second.next = third; 
         third.next = fourth; 
         fourth.next = five; // 1 -> 3 -> 7 -> 8 -> 10 -> null
+        
 
         sll.displaySingleLinkedList();
-        sll.insertNodeIntheSortedSingleLinkedList(2);
-        sll.displaySingleLinkedList();
-      
+        System.out.println("Is there a loop in this Single LinkedList: " + sll.isThereALoopInTheSingleLinkedList());
+        
     }
-
+ 
 }
