@@ -1,6 +1,5 @@
 package academy.devdojo.javaoneforall.dataEstructuresAndAlgorithms;
 
- 
 // A singly linked list is a type of linked list that is unidirectional, that is, it can be traversed in only one direction from head to the last node (tail).
 // Each element in a linked list is called a node.A single node contains data and a pointer to the next node which helps in maintaining the structure of the list.
 // The first node is called the head;it points to the first node of the list and helps us access every other element in the list.
@@ -167,7 +166,7 @@ public class SingleLinkedList {
         return mainPointer; // return the Nth node from the end of the SingleLinkedList
     }
 
-    public void removeDuplicatesFromSortedSingleLinkedList(){
+    public void removeDuplicatesFromSortedSingleLinkedList() {
         if (head == null) {
             System.out.println("This SingleLinkedList don't has nodes whatsoever");
             return;
@@ -176,14 +175,13 @@ public class SingleLinkedList {
         while (current != null && current.next != null) {
             if (current.data == current.next.data) {
                 current.next = current.next.next;
-            }
-            else{
+            } else {
                 current = current.next;
             }
         }
     }
 
-    public void insertNodeIntheSortedSingleLinkedList(int value){
+    public void insertNodeIntheSortedSingleLinkedList(int value) {
         if (head == null) {
             System.out.println("This SingleLinkedList don't has nodes whatsoever");
             return;
@@ -199,7 +197,7 @@ public class SingleLinkedList {
         previous.next = newNode;
     }
 
-    public void removeKeyFromSingleLinkedList(int key){
+    public void removeKeyFromSingleLinkedList(int key) {
         ListNode current = head;
         ListNode temp = null;
         while (current != null && current.data != key) {
@@ -212,7 +210,7 @@ public class SingleLinkedList {
         temp.next = current.next;
     }
 
-    public boolean isThereALoopInTheSingleLinkedList(){
+    public boolean isThereALoopInTheSingleLinkedList() {
         ListNode fastPointer = head;
         ListNode slowPointer = head;
         while (fastPointer != null && fastPointer.next != null) {
@@ -223,49 +221,90 @@ public class SingleLinkedList {
             }
         }
         return false;
-
-        //  sll.head.next = second; 
-        //  second.next = third; 
-        //  third.next = fourth; 
-        //  fourth.next = five; // 1 -> 3 -> 7 -> 8 -> 10 -> null
-        //  five.next = third;  // 1 -> 3 -> 7 -> 8 -> 10 
-        //                                   |__________|
+        // createALoopInTheSingleLinkedList();
+        // 1 -> 2 -> 3 -> 4 -> 5 -> 6
+        // |______________|
     }
 
-    public void createALoopInTheSingleLinkedList(){
+    public void createALoopInTheSingleLinkedList() {
         ListNode first = new ListNode(1);
         ListNode second = new ListNode(2);
         ListNode third = new ListNode(3);
         ListNode fourth = new ListNode(4);
         ListNode fifth = new ListNode(5);
-        ListNode sixty = new ListNode(6);
+        ListNode sixth = new ListNode(6);
         head = first;
-        head.next = second;
+        first.next = second;
         second.next = third;
         third.next = fourth;
         fourth.next = fifth;
-        fifth.next = sixty;
-        sixty.next = third;
+        fifth.next = sixth;
+        sixth.next = third;
+    }
+
+    public ListNode startNodeInALoop() {
+        ListNode fastPointer = head;
+        ListNode slowPointer = head;
+        while (fastPointer != null && fastPointer.next != null) {
+            fastPointer = fastPointer.next.next;
+            slowPointer = slowPointer.next;
+            if (fastPointer == slowPointer) {
+                return getStartingNodeOfLoop(slowPointer);
+            }
+        }
+        return null;
+    }
+
+    public ListNode getStartingNodeOfLoop(ListNode slowPointer) {
+        ListNode temp = head;
+        while (temp != slowPointer) {
+            temp = temp.next;
+            slowPointer = slowPointer.next;
+        }
+        return temp; // starting node of the loop
+    }
+
+    public void findingNodeToRemoveLoop() {
+        ListNode fastPointer = head;
+        ListNode slowPointer = head;
+        while (fastPointer != null && fastPointer.next != null) {
+            fastPointer = fastPointer.next.next;
+            slowPointer = slowPointer.next;
+            if (fastPointer == slowPointer) {
+                removeLoop(slowPointer);
+                return;
+            }
+        }
+    }
+
+    public void removeLoop(ListNode slowPointer) {
+        ListNode temp = head;
+        while (temp.next != slowPointer.next) {
+            temp = temp.next;
+            slowPointer = slowPointer.next;
+        }
+        slowPointer.next = null;
     }
 
     public static void main(String[] args) {
         SingleLinkedList sll = new SingleLinkedList();
-        sll.head = new ListNode(1);// alocate 10 to the first space
-        ListNode second = new ListNode(3); // creating the second node
-        ListNode third = new ListNode(7); // creating the third node
-        ListNode fourth = new ListNode(8); // creating the fourth node
-        ListNode five = new ListNode(10); // creating the five node
+        // sll.head = new ListNode(1);
+        // ListNode second = new ListNode(3);
+        // ListNode third = new ListNode(7);
+        // ListNode fourth = new ListNode(8);
+        // ListNode five = new ListNode(10);
 
-        // // Now we will connect them together to form a chain
-        sll.head.next = second; 
-        second.next = third; 
-        third.next = fourth; 
-        fourth.next = five; // 1 -> 3 -> 7 -> 8 -> 10 -> null
-        
-
+        // Now we will connect them together to form a chain
+        // sll.head.next = second;
+        // second.next = third;
+        // third.next = fourth;
+        // fourth.next = five; // 1 -> 3 -> 7 -> 8 -> 10 -> null
+        sll.createALoopInTheSingleLinkedList();
+        System.out.println(sll.isThereALoopInTheSingleLinkedList());
+        System.out.println(sll.startNodeInALoop().data);
+        sll.findingNodeToRemoveLoop();
         sll.displaySingleLinkedList();
-        System.out.println("Is there a loop in this Single LinkedList: " + sll.isThereALoopInTheSingleLinkedList());
-        
+
     }
- 
+
 }
