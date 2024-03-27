@@ -17,7 +17,7 @@ public class SingleLinkedList {
         }
     }
 
-    public void displaySingleLinkedList() {
+    public static void displaySingleLinkedList(ListNode head) {
         ListNode current = head;
         while (current != null) {
             System.out.print(current.data + " -> ");
@@ -57,7 +57,7 @@ public class SingleLinkedList {
         current.next = newNode;
     }
 
-    public void insertInTheGivenPositionOfTheSingleLinkedList(int data, int position) {
+    public void insertInTheGivenPositionInTheSingleLinkedList(int data, int position) {
         ListNode newNode = new ListNode(data);
         if (position == 1) {
             newNode.next = head;
@@ -100,7 +100,7 @@ public class SingleLinkedList {
         return current;
     }
 
-    public void deleteNodeInTheGivenPositionOfTheSingleLinkedList(int position) {
+    public void deleteNodeInTheGivenPositionInTheSingleLinkedList(int position) {
         if (position == 1) {
             head = head.next;
             return;
@@ -199,31 +199,15 @@ public class SingleLinkedList {
 
     public void removeKeyFromSingleLinkedList(int key) {
         ListNode current = head;
-        ListNode temp = null;
+        ListNode previous = null;
         while (current != null && current.data != key) {
-            temp = current;
+            previous = current;
             current = current.next;
         }
         if (current == null) {
             return;
         }
-        temp.next = current.next;
-    }
-
-    public boolean isThereALoopInTheSingleLinkedList() {
-        ListNode fastPointer = head;
-        ListNode slowPointer = head;
-        while (fastPointer != null && fastPointer.next != null) {
-            fastPointer = fastPointer.next.next;
-            slowPointer = slowPointer.next;
-            if (fastPointer == slowPointer) {
-                return true;
-            }
-        }
-        return false;
-        // createALoopInTheSingleLinkedList();
-        // 1 -> 2 -> 3 -> 4 -> 5 -> 6
-        // |______________|
+        previous.next = current.next;
     }
 
     public void createALoopInTheSingleLinkedList() {
@@ -242,69 +226,121 @@ public class SingleLinkedList {
         sixth.next = third;
     }
 
-    public ListNode startNodeInALoop() {
+    public boolean isThereALoopInTheSingleLinkedList() {
         ListNode fastPointer = head;
         ListNode slowPointer = head;
         while (fastPointer != null && fastPointer.next != null) {
             fastPointer = fastPointer.next.next;
             slowPointer = slowPointer.next;
             if (fastPointer == slowPointer) {
-                return getStartingNodeOfLoop(slowPointer);
+                return true;
+            }
+        }
+        return false;
+        // createALoopInTheSingleLinkedList();
+        // 1 -> 2 -> 3 -> 4 -> 5 -> 6
+        // |______________|
+    }
+
+    public ListNode getStartingNodeFromALoop() {
+        ListNode fastPointer = head;
+        ListNode slowPointer = head;
+        while (fastPointer != null && fastPointer.next != null) {
+            fastPointer = fastPointer.next.next;
+            slowPointer = slowPointer.next;
+            if (fastPointer == slowPointer) {
+                ListNode temp = head;
+                while (temp != slowPointer) {
+                    temp = temp.next;
+                    slowPointer = slowPointer.next;
+                }
+                return temp; // starting node of the loop
             }
         }
         return null;
     }
 
-    public ListNode getStartingNodeOfLoop(ListNode slowPointer) {
-        ListNode temp = head;
-        while (temp != slowPointer) {
-            temp = temp.next;
-            slowPointer = slowPointer.next;
-        }
-        return temp; // starting node of the loop
-    }
-
-    public void findingNodeToRemoveLoop() {
+    public void removeLoopFromSingleLinkedList() {
         ListNode fastPointer = head;
         ListNode slowPointer = head;
         while (fastPointer != null && fastPointer.next != null) {
             fastPointer = fastPointer.next.next;
             slowPointer = slowPointer.next;
             if (fastPointer == slowPointer) {
-                removeLoop(slowPointer);
+                ListNode temp = head;
+                while (temp.next != slowPointer.next) {
+                    temp = temp.next;
+                    slowPointer = slowPointer.next;
+                }
+                slowPointer.next = null;
                 return;
             }
         }
     }
 
-    public void removeLoop(ListNode slowPointer) {
-        ListNode temp = head;
-        while (temp.next != slowPointer.next) {
-            temp = temp.next;
-            slowPointer = slowPointer.next;
+    public static ListNode mergeTwoSortedSingleLinkedList(ListNode a, ListNode b) {
+        // a is the first SingleLinkedList(Sorted)
+        // b is the second SingleLinkedList(Sorted)
+        // aux is a variable for holding the reference for the new sorted
+        // SingleLinkedList
+        // tail is a variable which holds the next elements (sorted elements), and
+        // harbor the final of the SingleLinkedList
+        ListNode aux = new ListNode(0);
+        ListNode tail = aux;
+        while (a != null && b != null) {
+            if (a.data <= b.data) {
+                tail.next = a;
+                a = a.next;
+            } else {
+                tail.next = b;
+                b = b.next;
+            }
+            tail = tail.next;
         }
-        slowPointer.next = null;
+
+        if (a == null) {
+            tail.next = b;
+        } else {
+            tail.next = a;
+        }
+        return aux.next;
+    }
+
+    public static ListNode sumTwoSingleLinkedList(ListNode a, ListNode b) {
+        // carry is a variable for hold the rest of the sum, because one node can hold
+        // only numbers with one digit
+        ListNode aux = new ListNode(0);
+        ListNode tail = aux;
+        int carry = 0;
+        while (a != null || b != null) {
+            int x = (a != null) ? a.data : 0;
+            int y = (b != null) ? b.data : 0;
+            int sum = carry + x + y;
+            carry = sum / 10;
+            tail.next = new ListNode(sum % 10);
+            tail = tail.next;
+            a = (a != null) ? a.next : null;
+            b = (b != null) ? b.next : null;
+        }
+
+        if (carry > 0) {
+            tail.next = new ListNode(carry);
+        }
+        return aux.next;
     }
 
     public static void main(String[] args) {
         SingleLinkedList sll = new SingleLinkedList();
-        // sll.head = new ListNode(1);
-        // ListNode second = new ListNode(3);
-        // ListNode third = new ListNode(7);
-        // ListNode fourth = new ListNode(8);
-        // ListNode five = new ListNode(10);
-
-        // Now we will connect them together to form a chain
-        // sll.head.next = second;
-        // second.next = third;
-        // third.next = fourth;
-        // fourth.next = five; // 1 -> 3 -> 7 -> 8 -> 10 -> null
-        sll.createALoopInTheSingleLinkedList();
-        System.out.println(sll.isThereALoopInTheSingleLinkedList());
-        System.out.println(sll.startNodeInALoop().data);
-        sll.findingNodeToRemoveLoop();
-        sll.displaySingleLinkedList();
-
+        sll.insertInTheEndOfTheSingleLinkedList(0);
+        sll.insertInTheEndOfTheSingleLinkedList(9);
+        sll.insertInTheEndOfTheSingleLinkedList(9);
+        SingleLinkedList sll2 = new SingleLinkedList();
+        sll2.insertInTheEndOfTheSingleLinkedList(0);
+        sll2.insertInTheEndOfTheSingleLinkedList(9);
+        sll2.insertInTheEndOfTheSingleLinkedList(1);
+        displaySingleLinkedList(sll.head);
+        displaySingleLinkedList(sll2.head);
+        displaySingleLinkedList(sumTwoSingleLinkedList(sll.head, sll2.head));
     }
 
 }
