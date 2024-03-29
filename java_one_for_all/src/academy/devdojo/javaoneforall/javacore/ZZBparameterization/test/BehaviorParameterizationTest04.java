@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.function.Predicate;
 
 import academy.devdojo.javaoneforall.javacore.ZZBparameterization.domain.Car;
-import academy.devdojo.javaoneforall.javacore.ZZBparameterization.interfaces.CarPredicate;
 
 public class BehaviorParameterizationTest04 {
     private static List<Car> cars = List.of(new Car("green", 2011), new Car("black", 1998), new Car("red", 2019));

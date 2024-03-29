@@ -331,16 +331,7 @@ public class SingleLinkedList {
 
     public static void main(String[] args) {
         SingleLinkedList sll = new SingleLinkedList();
-        sll.insertInTheEndOfTheSingleLinkedList(0);
-        sll.insertInTheEndOfTheSingleLinkedList(9);
-        sll.insertInTheEndOfTheSingleLinkedList(9);
-        SingleLinkedList sll2 = new SingleLinkedList();
-        sll2.insertInTheEndOfTheSingleLinkedList(0);
-        sll2.insertInTheEndOfTheSingleLinkedList(9);
-        sll2.insertInTheEndOfTheSingleLinkedList(1);
-        displaySingleLinkedList(sll.head);
-        displaySingleLinkedList(sll2.head);
-        displaySingleLinkedList(sumTwoSingleLinkedList(sll.head, sll2.head));
+
     }
 
 }
