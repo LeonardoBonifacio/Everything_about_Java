@@ -80,7 +80,7 @@ public class DoublyLinkedList {// Outer Class DoublyLinkedList
 
     public ListNode removeLast() {
         if (isEmpty())
-            throw new NoSuchElementException("Thsi DoublyLinkedList is Empty");
+            throw new NoSuchElementException("This DoublyLinkedList is Empty");
         ListNode temp = tail;
         if (head == tail) {
             head = null;
