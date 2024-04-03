@@ -66,21 +66,19 @@ public class CircularSingleLinkedList {
         ListNode temp = new ListNode(data);
         if (last == null) {
             last = temp;
-        }
-        else{
+        } else {
             temp.next = last.next;
         }
         last.next = temp;
         length++;
     }
 
-    public void insertLast(int data){
+    public void insertLast(int data) {
         ListNode temp = new ListNode(data);
         if (last == null) {
             last = temp;
             last.next = last;
-        }
-        else{
+        } else {
             temp.next = last.next;
             last.next = temp;
             last = temp;
@@ -88,13 +86,13 @@ public class CircularSingleLinkedList {
         length++;
     }
 
-    public int removeFirst(){
-        if (isEmpty()) throw new NoSuchElementException("This Circular Single Linked List is Empty");
+    public int removeFirst() {
+        if (isEmpty())
+            throw new NoSuchElementException("This Circular Single Linked List is Empty");
         ListNode temp = last.next;
         if (last.next == last) {
             last = null;
-        }
-        else{
+        } else {
             last.next = temp.next;
         }
         length--;
