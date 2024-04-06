@@ -24,8 +24,8 @@ public class CircularSingleLinkedList {
     private int length;
 
     public CircularSingleLinkedList() {
-        this.length = 0;
         this.last = null;
+        this.length = 0;
     }
 
     public int getLength() {

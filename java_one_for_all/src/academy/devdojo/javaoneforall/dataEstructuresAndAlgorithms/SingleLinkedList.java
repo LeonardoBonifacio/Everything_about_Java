@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.dataEstructuresAndAlgorithms;
+ package academy.devdojo.javaoneforall.dataEstructuresAndAlgorithms;
 
 // A singly linked list is a type of linked list that is unidirectional, that is, it can be traversed in only one direction from head to the last node (tail).
 // Each element in a linked list is called a node.A single node contains data and a pointer to the next node which helps in maintaining the structure of the list.
@@ -308,7 +308,7 @@ public class SingleLinkedList {
 
     public static ListNode sumTwoSingleLinkedList(ListNode a, ListNode b) {
         // carry is a variable for hold the rest of the sum, because one node can hold
-        // only numbers with one digit
+        // only numbers with one digit 0 - 9
         ListNode aux = new ListNode(0);
         ListNode tail = aux;
         int carry = 0;

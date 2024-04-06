@@ -2,7 +2,6 @@ package academy.devdojo.javaoneforall.dataEstructuresAndAlgorithms;
 
 import java.util.EmptyStackException;
 
-
 // Stack is a linear data structure that follows a particular order in which the operations are performed.
 // The order may be LIFO(Last In First Out) or FILO(First In Last Out). LIFO implies that the element that is inserted last, 
 // comes out first and FILO implies that the element that is inserted first, comes out last.
@@ -45,7 +44,7 @@ public class StacksWithSingleLinkedList {// outer class
 
     }
 
-    public int peek(){
+    public int peek() {
         if (isEmpty()) {
             throw new EmptyStackException();
         }
@@ -65,8 +64,7 @@ public class StacksWithSingleLinkedList {// outer class
         stack.push(10);
         stack.push(15);
         stack.push(20);
-        System.out.println(stack.peek());
-        stack.pop();
+        System.out.println(stack.pop());
         System.out.println(stack.peek());
     }
 }

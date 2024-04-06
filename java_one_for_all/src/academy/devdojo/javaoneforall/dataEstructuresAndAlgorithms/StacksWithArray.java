@@ -67,6 +67,50 @@ public class StacksWithArray {
         return new String(chars);
     }
 
+    public int[] nextGreaterElement(int[] arr) {
+        int[] result = new int[arr.length];
+        Stack<Integer> stack = new Stack<>();
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (!stack.isEmpty()) {
+                while (!stack.isEmpty() && stack.peek() <= arr[i]) {
+                    stack.pop();
+                }
+            }
+            if (stack.isEmpty()) {
+                result[i] = -1;
+            } else {
+                result[i] = stack.peek();
+            }
+            stack.push(arr[i]);
+        }
+        return result;
+    }
+
+    public boolean isValidParenthesis(String string) {
+        // given a string only with brackets, determine if the input string is valid
+        // an input string is valid if
+        // - Open brackets must be closed by same type of brackets
+        // - Open brackets must be closed in correct order
+        Stack<Character> stack = new Stack<>();
+        for (char c : string.toCharArray()) {
+            if (c == '(' || c == '{' || c == '[') {
+                stack.push(c);
+            } else {
+                if (stack.isEmpty()) {
+                    return false;
+                } else {
+                    char top = stack.peek();
+                    if (top == '(' && c == ')' || top == '{' && c == '}' || top == '[' && c == ']') {
+                        stack.pop();
+                    } else {
+                        return false;
+                    }
+                }
+            }
+        }
+        return stack.isEmpty();
+    }
+
     public static void main(String[] args) {
         String nome = "Leonardo";
         System.out.println(reverseString(nome));
