@@ -6,8 +6,8 @@ public class Class06LoopStatements05 {
      * Condition: the monthly payment cannot be lower than 1000
      */
     public static void main(String[] args) {
-        double totalCarPrice = 20000;
-        for (int mounthCount = (int) totalCarPrice; mounthCount >= 1; mounthCount--) {
+        int totalCarPrice = 20000;
+        for (int mounthCount =  totalCarPrice; mounthCount >= 1; mounthCount--) {
             double monthlyPrice = totalCarPrice / mounthCount;
             if (monthlyPrice < 1000) {
                 continue;// can be used the same way that break is used therefore, that 'continue' statement instead of get out

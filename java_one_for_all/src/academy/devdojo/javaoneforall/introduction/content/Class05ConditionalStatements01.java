@@ -20,13 +20,13 @@ public class Class05ConditionalStatements01 {
             System.out.println("Sorry , you are not allowed to buy alcohol");
         }
 
-        /*
-        JOKE
-        boolean c = true;
-        if(c = false){
-            System.out.println("Inside weird condition")
-        }
-         */
+        
+        // JOKE
+        // boolean c = true;
+        // if(c = false){
+        //     System.out.println("Inside weird condition")
+        // }
+         
 
     }
 }

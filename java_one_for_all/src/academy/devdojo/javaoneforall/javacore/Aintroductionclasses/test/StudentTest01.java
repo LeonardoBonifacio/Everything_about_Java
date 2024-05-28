@@ -1,5 +1,7 @@
 package academy.devdojo.javaoneforall.javacore.Aintroductionclasses.test;
 
+import java.util.Arrays;
+
 import academy.devdojo.javaoneforall.javacore.Aintroductionclasses.domain.Student;// telling where the class(Student) is
 
 public class StudentTest01 {
@@ -13,8 +15,10 @@ public class StudentTest01 {
         student.gender = 'M';
         student.name = "Luffy";
         // acessing this atributes of my object(created by my class Student)
-        System.out.println("The name this is student is: " + student.name);        
+        System.out.println("The name this is student is: [" + student.name + "]");       
         System.out.println("The age of this student is: " + student.age);        
-        System.out.println("The gender of this student is: " + student.gender);        
+        System.out.println("The gender of this student is: " + student.gender);     
+        
+
     }
 }

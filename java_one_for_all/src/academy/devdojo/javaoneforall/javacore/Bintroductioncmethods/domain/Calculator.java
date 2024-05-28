@@ -61,7 +61,7 @@ public class Calculator {
         // the type of the variable
         // you cannot have two varArgs because how would java knows when to stop and
         // start in the next one
-        // if you want to have multiple paramets they must be come before the varArgs
+        // if you want to have multiple parameters they must be come before the varArgs
         // parameters
         // like this (String date, int age, int...numbers)
         int sum = 0;

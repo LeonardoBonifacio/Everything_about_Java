@@ -13,7 +13,7 @@ public class Class06LoopStatements01 {
             System.out.println("Inside do while: " + ++counter);
         } while (counter < 10);
 
-        for(int i=0; i < 10; i++){// most used in arrays and  things which i know how big or how little are
+        for(int i = 0; i < 10; i++){// most used in arrays and  things which i know how big or how little are
             // inside the parenthesis (init; end ;step)
             // variables initializity inside the for statatement are variable locable, which means if we try use outside this for block
             // the compilor raised a error

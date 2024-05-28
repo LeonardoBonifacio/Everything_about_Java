@@ -49,7 +49,7 @@ public class Class02PrimitiveTypes {
          * single quote,
          * // the number which we put represents a character in table ASCII (here
          * http://www.cs.emory.edu/~cheung/Courses/170/Syllabus/05/char1.html)
-         * // for example 87 is equal a 'W' or in table unicode table, where the value
+         * // for example 87 is equal a 'W' in table unicode table, where the value
          * ever start with \U('u' in lowercase) after that put the number
          * // in the table unicode (here
          * https://codestall.wordpress.com/2017/08/23/unicode-system-in-java/).

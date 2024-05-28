@@ -1,10 +1,9 @@
 package academy.devdojo.javaoneforall.introduction.exercises;
 
 import java.security.SecureRandom;
-import java.text.NumberFormat;
 
 public class Craps {
-    private static final SecureRandom randomNumbers = new SecureRandom();
+    private static SecureRandom randomNumbers = new SecureRandom();
 
     private enum Status {
         CONTINUE,
@@ -25,7 +24,7 @@ public class Craps {
         int gamesWonOnTheSecondRollAndAfter = 0;
         int gamesLost = 0;
         int gamesLostOntheFirstRoll = 0;
-        int gamesLostOntheFirstRollAndAfter = 0;
+        int gamesLostOnTheSecondRollAndAfter = 0;
         Status gameStatus;
 
         for (int i = 1; i <= 100; i++) {
@@ -47,7 +46,7 @@ public class Craps {
                 default:
                     gameStatus = Status.CONTINUE;
                     myPoint = sumOfDice;
-                    System.out.println("Point is: " + myPoint);
+                    System.out.println("Your Point is: " + myPoint);
                     break;
             }
     
@@ -58,7 +57,7 @@ public class Craps {
                     gamesWonOnTheSecondRollAndAfter++;
                     gameStatus = Status.WON;
                 } else if (sumOfDice == SEVEN) {
-                    gamesLostOntheFirstRollAndAfter++;
+                    gamesLostOnTheSecondRollAndAfter++;
                     gameStatus = Status.LOST;
                 }
             }
@@ -78,20 +77,20 @@ public class Craps {
         System.out.println("Wins in the second Roll and after: " + gamesWonOnTheSecondRollAndAfter);
         System.out.println("Playing this game 100 tims the player lost: " + gamesLost);
         System.out.println("Lost in the first Roll: " + gamesLostOntheFirstRoll);
-        System.out.println("Lost in the second Roll and after: " + gamesLostOntheFirstRollAndAfter);
+        System.out.println("Lost in the second Roll and after: " + gamesLostOnTheSecondRollAndAfter);
         System.out.println("The chances of win this game gone: " + (((double) gamesWon/100) * 10) + "%");
         System.out.println("The chances of lost this game gone: " + (((double) gamesLost/100) * 10) + "%");
         
     }
 
     public static int rollDice() {
-        int die1 = 1 + randomNumbers.nextInt(6);
-        int die2 = 1 + randomNumbers.nextInt(6);
+        int dice1 = 1 + randomNumbers.nextInt(6);
+        int dice2 = 1 + randomNumbers.nextInt(6);
 
-        int sum = die1 + die2;
+        int sum = dice1 + dice2;
 
         System.out.println();
-        System.out.printf("Player rolled %d + %d = %d%n", die1, die2, sum);
+        System.out.printf("Player rolled %d + %d = %d%n", dice1, dice2, sum);
         System.out.println();
 
         return sum;

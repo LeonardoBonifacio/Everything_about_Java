@@ -6,10 +6,7 @@ public class CheckerboardPatternAsterisks {
             if (i % 2 == 0) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <= 8; j++) {
-                System.out.print("* ");
-            }
-            System.out.println();
+            System.out.println("* * * * * * * *");
         }
     }
 }

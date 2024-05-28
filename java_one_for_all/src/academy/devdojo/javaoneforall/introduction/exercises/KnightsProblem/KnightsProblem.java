@@ -36,10 +36,10 @@ public class KnightsProblem {
         for (int row = 0; row < boardChess.length; row++) {
             for (int column = 0; column < boardChess[row].length; column++) {
                 if (boardChess[row][column] > 9) {
-                    System.out.print("[" + boardChess[row][column] + "]");    
+                    System.out.print("[" + boardChess[row][column] + "] ");    
                 }
                 else{
-                    System.out.print(" [" + boardChess[row][column] + "] ");
+                    System.out.print("[" + boardChess[row][column] + " ] ");
                 }
             }
             System.out.println();

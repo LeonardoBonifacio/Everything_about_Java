@@ -7,12 +7,12 @@ public class Imc {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Put your height: ");
-        double altura = input.nextDouble();
+        double height = input.nextDouble();
 
         System.out.print("Put your weight: ");
         double weight = input.nextDouble();
 
-        double imc = weight / (altura * altura);
+        double imc = weight / (height * height);
 
         if (imc >= 0 && imc < 18.5) {
             System.out.println("You are less weight");
@@ -39,7 +39,7 @@ public class Imc {
             System.out.println("Imc: " + imc);        
         }
         else{
-            System.out.println("Value invalid of weight or altura");
+            System.out.println("Value invalid of weight or height");
         }
     }
 }

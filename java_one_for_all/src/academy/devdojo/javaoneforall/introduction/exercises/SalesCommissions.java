@@ -26,7 +26,7 @@ public class SalesCommissions {
             else{
                 ++counterRange[10];
             }
-            System.out.println("Do you want to continue input values of other coorkers ?");
+            System.out.println("Do you want to continue input values of other coworkers ?");
             char resp = input.next().toUpperCase().charAt(0);
             if (resp == 'N') {
                 break;

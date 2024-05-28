@@ -17,7 +17,7 @@ public class DiceRolling {
                 System.out.println();
                 for (int j = 1; j < 7; j++) {
                     System.out.println(j + " " + (j + 1) + "  " + (j + 2) + "  " + (j + 3) + "  " + (j + 4) + "  "
-                            + (j + 5) + "  " + (j + 6));
+                            + (j + 5) + "  " + (j + 6) );
                     // print here
                 }
             }

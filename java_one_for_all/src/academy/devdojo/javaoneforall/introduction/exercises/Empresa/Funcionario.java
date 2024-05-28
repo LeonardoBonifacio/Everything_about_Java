@@ -33,41 +33,34 @@ public class Funcionario {
 
     public void acrescentaRemuneracao() {
         if (this.departamento != null) {
-            if (this.departamento.getNome().equalsIgnoreCase("recursos humanos")) {
-                this.salario = this.salario + (this.salario * this.departamento.getRemuneracaoExtra());
-            } else if (this.departamento.getNome().equalsIgnoreCase("marketing")) {
-                this.salario = this.salario + (this.salario * this.departamento.getRemuneracaoExtra());
-            } else {
-                this.salario = this.salario + (this.salario * this.departamento.getRemuneracaoExtra());
-            }
+            this.salario += this.salario * this.departamento.getRemuneracaoExtra();
+            return;
         }
-        else{
         System.out.println("Este funcionário( " + this.nome+ " ) não está em nenhum departamento, por isso não vai receber aumento de salário");
-        }
     }
 
     public double getSalario() {
-        return salario;
+        return this.salario;
     }
 
     public String getProfissão() {
-        return profissao;
+        return this.profissao;
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public String getCpf() {
-        return cpf;
+        return this.cpf;
     }
 
     public Departamento getDepartamento() {
-        return departamento;
+        return this.departamento;
     }
 
     public String getProfissao() {
-        return profissao;
+        return this.profissao;
     }
 
 }

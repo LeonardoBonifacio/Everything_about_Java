@@ -10,8 +10,8 @@ public class BarChartPrintingProgram {
         while (contNumber != 7 - 2) {
             System.out.print("Please put one number between one and thirty: ");
             number = input.nextInt();
-            if (number < 0 ||number > 30) {
-                System.out.print("PLease put one number between one and thirty: ");
+            if (number < 0 || number > 30) {
+                System.out.print("Please put one number between one and thirty: ");
                 number = input.nextInt();
             }
             else{

@@ -4,15 +4,19 @@ public class Class07Arrays03 {
     public static void main(String[] args) {
         // way number 1 creating an array
         int[] numbers = new int[3];
+
         // Creating an array already fill(must be fill com data types which match with the data type the array that storaged these data)
         // way number 2 creating an array
         int[] numbers2 = {1, 2, 3, 4, 7};
+
         // way number 3 creating an array
         int[] numbers3 = new int[]{10, 11, 12, 13, 14};// this way you cannot have the size of the array write inside the [], because you are assigned the values
+        
         // can iterating over the array like this
         for (int i = 0; i < numbers3.length; i++) {// if you want use the index, use this for
             System.out.println(numbers3[i]);
         }
+        
         // we can also iterating over the array like this(with for each), if you need only iterating over an array use this for
         for (int i : numbers3) {// just like for each number in numbers3
             // in for each we don't have to do the bussines logic, basically the for each will known the size of the array for us an behind the scenes 

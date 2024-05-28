@@ -44,11 +44,15 @@ public class TurtleGraphics {
                 case 3:
                     turnRight = true;
                     turnLeft = false;
+                    moveUp = false;
+                    moveDown = false;
                     System.out.println("The turtle turned side to side Right");
                     break;
                 case 4:
                     turnLeft = true;
                     turnRight = false;
+                    moveUp = false;
+                    moveDown = false;
                     System.out.println("The turtle turned side to side Left");
                     break;
                 case 5:
@@ -112,7 +116,7 @@ public class TurtleGraphics {
                             for (int i = 0; i < spacesToMove; i++) {
                                 turtleColumn++;
                                 if (turtleColumn >= 20) {
-                                    turtleColumn++;
+                                    turtleColumn--;
                                     break;
                                 }
                                 }

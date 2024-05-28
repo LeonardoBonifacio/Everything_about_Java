@@ -10,7 +10,7 @@ public class Cryptografy {
         numberInt = input.nextInt();
         String numberString = "";
 
-        int firstDigit = numberInt/ 1000;
+        int firstDigit = numberInt / 1000;
         int secondDigit = numberInt % 1000 / 100;
         int thirdDigit = numberInt % 100 / 10;
         int fourthDigit = numberInt % 10;

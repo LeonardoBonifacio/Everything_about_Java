@@ -2,7 +2,7 @@ package academy.devdojo.javaoneforall.introduction.exercises;
 
 import java.util.Scanner;
 
-public class SlidesOfTriangule {
+public class SlidesOfTriangule{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int slide1;
@@ -31,7 +31,7 @@ public class SlidesOfTriangule {
             int sum = slide2 + slide3;
             if (sum > bigSlide) {
                 if (slide2 + bigSlide == sum && slide3 + bigSlide == sum) {
-                    System.out.println("This values can represente the slides fo a triangule rectangule");
+                    System.out.println("This values can represente the slides of a triangule rectangule");
                 }
             }
         }
@@ -39,7 +39,7 @@ public class SlidesOfTriangule {
             int sum = slide1 + slide3;
             if (sum > bigSlide) {
                 if (slide1 + bigSlide == sum && slide3 + bigSlide == sum) {
-                    System.out.println("This values can represente the slides fo a triangule rectangule");
+                    System.out.println("This values can represente the slides of a triangule rectangule");
                 }
             }
         }
@@ -47,9 +47,12 @@ public class SlidesOfTriangule {
             int sum = slide2 + slide1;
             if (sum > bigSlide) {
                 if (slide2 + bigSlide == sum && slide1 + bigSlide == sum) {
-                    System.out.println("This values can represente the slides fo a triangule rectangule");
+                    System.out.println("This values can represente the slides of a triangule rectangule");
                 }
             }
+        }
+        else{
+            System.out.println("This values can't represent the slides of a triangule rectangule");
         }
 
 

@@ -30,7 +30,7 @@ public class Position {
         if (!(other instanceof Position)) {
             return false;
         }
-        Position p = (Position)other;
+        Position p = (Position) other;
         return this.x == p.x && this.y == p.y;
     }
 

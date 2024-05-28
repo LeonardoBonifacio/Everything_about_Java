@@ -2,6 +2,7 @@ package academy.devdojo.javaoneforall.introduction.exercises;
 
 import java.lang.Math;
 import java.util.Scanner;
+
 public class DiameterCircumferenceAreaOfCircle {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
