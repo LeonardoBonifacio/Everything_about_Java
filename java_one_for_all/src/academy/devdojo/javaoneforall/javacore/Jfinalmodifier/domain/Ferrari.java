@@ -10,6 +10,7 @@ public class Ferrari extends Car {
 
     // but you can of course overloading(because you are creating a new method)
     public void print(String coisa) {
+        System.out.println(coisa);
     } 
 
 }

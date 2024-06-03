@@ -22,7 +22,7 @@ public class LoginInvalidExceptionTest01 {
         System.out.print("Password: ");
         String typedPassword = input.nextLine();
 
-        if (!passwordDB.equals(typedPassword) | !usernameDB.endsWith(typedUsername)) {
+        if (!passwordDB.equals(typedPassword) | !usernameDB.equals(typedUsername)) {
             throw new LoginInvalidException("Username or password is incorrect! ");
         }
         System.out.println("Login Completed");

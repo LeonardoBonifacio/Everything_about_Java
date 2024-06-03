@@ -13,7 +13,7 @@ public class StringPerformanceTest01 {
         // the same time
         // that's because you must use Stringbuilders or StringBuffers
         // the difference between among they is the string buffer methods are
-        // Syncronyzed(which only allow one thead at a time use, because of the  multi thread concept)
+        // Syncronyzed(which only allow one thead at a time use, because of the multi thread concept)
 
         begin = System.currentTimeMillis();
         concatStringBuilder(100_000);

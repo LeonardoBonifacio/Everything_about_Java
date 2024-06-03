@@ -34,7 +34,7 @@ public class Anime {
         this.status = status;
         // every time the object anime is created i will need name type episodes and
         // status or at least i will need a String, String, String and int
-        // the defaul constructor present in every class is overloading after we write
+        // the default constructor present in every class is overloading after we write
         // our constructor
         // one problem with constructor is every time that we want to create an anime we
         // need to send all the data, but sometimes we don't have the data at hand

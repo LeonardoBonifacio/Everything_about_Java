@@ -27,7 +27,7 @@ public class ProductTaxReportService {
             Tomato tomato = (Tomato) product;
             System.out.println("Best consumed before: " + tomato.getBestConsumedBefore());
             // i can also do this like this
-            //System.out.println("Best consumed before: " + ((Tomato) product)).getBestConsumedBefore();
+            //System.out.println("Best consumed before: " + ((Tomato) product)).getBestConsumedBefore());
             // whithout creating the instace variable of Tomato
         }
     }

@@ -39,10 +39,10 @@ public class WrapperTest01 {
         // unboxing is when java will convert the wrapper into a primitive type
         int i = intW;
         // as we are work with Objects(wrappers), all this object have methods to change
-        // to whatever type(in most of the cases) that you wnat
+        // to whatever type(in most of the cases) that you want
 
         // all the Wrapper class are Statics
-        boolean booleanValue = Boolean.parseBoolean(null);// this method is uncasesensitivy
+        boolean booleanValue = Boolean.parseBoolean("true");// this method is uncasesensitivy
         System.out.println(booleanValue);
         System.out.println(Character.isDigit('9'));
         System.out.println(Character.isDefined('9'));

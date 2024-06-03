@@ -26,7 +26,7 @@ public class Car {
         SPEED_LIMIT = 250;
         // if we have one init block or one static init block we cannot initialized the
         // constant
-        // variables in our constructor , because the blocks loads everthing before the
+        // variables in our constructor , because the blocks loads everything before the
         // constructor
     }
 

@@ -47,7 +47,7 @@ public abstract class Employee extends Person {
     // abstract methods) will be forced by the jvm to provide implementation for
     // this method, you just can create the body of this method empty and override
     // it and let this incomplete, but you must at least create the body of the
-    // method so that in future you may put the your own implementation for this specific
+    // method so that in future you may put your own implementation for this specific
     // class or object
 
     // just to remember you can have inside one classe both types of
@@ -74,6 +74,6 @@ public abstract class Employee extends Person {
     @Override
     public void print() {
         System.out.println("Printing");
-
     }
+    
 }

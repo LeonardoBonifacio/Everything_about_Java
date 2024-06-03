@@ -63,4 +63,5 @@ public class Employee {
     public double getAverage() {
         return this.average;
     }
+    
 }

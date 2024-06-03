@@ -22,7 +22,7 @@ public class TryWithResourcesTest01 {
             // the try with resources don't need to have the block catch or finally, but the method must throw the exception
             // that the try must throw
         }catch(IOException e){
-
+            e.printStackTrace();
         }
     }
 

@@ -11,7 +11,7 @@ public class PatternMatcherTest02 {
         // \s - all the blank spaces like \t \r \f \n
         // \S - everything that is no \s (which means everything that is no a space)
         // \w - all the letters(a-z, A-Z) and digits(0-9) and underscore(_)
-        // \W - everything that is not \w (letters, digits and _)
+        // \W - everything that is not \w (letters, digits and _ )
         String regex = "\\W"; 
         String text = "_d2\t23@ gm"; 
         Pattern pattern = Pattern.compile(regex); 

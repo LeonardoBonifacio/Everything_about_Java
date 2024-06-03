@@ -1,6 +1,6 @@
 package academy.devdojo.javaoneforall.javacore.Kenumaration.domain;
 
-// you create a file enumeration add 'enum' instead of 'class'
+// create a file enumeration adding 'enum' instead of 'class'
 // is a special type of class that has some sort of things very usefull
 // like where you can specifically work with a problem where you have to choose a selection between
 // a limited amount of options

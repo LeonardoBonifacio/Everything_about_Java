@@ -15,7 +15,7 @@ public class ExceptionTest02 {
     // because they can want to do something different of you do in your way to
     // handle that Exception
     private static void customFileCreator(){ // throws IOException {
-        File file = new File("C:\\Users\\LUCIANO\\Desktop\\Java\\java_one_for_all\\folder\\test.txt");
+        File file = new File("C:\\Users\\bonil\\Desktop\\JAVA\\java_one_for_all\\folder\\teste.txt");
         try {
             boolean isCreated = file.createNewFile();
             System.out.println("File Created - > " + isCreated);

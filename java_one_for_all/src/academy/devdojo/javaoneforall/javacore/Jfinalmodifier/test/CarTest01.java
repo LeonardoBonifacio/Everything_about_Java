@@ -27,6 +27,7 @@ public class CarTest01 {
 
         ferrari.setName("Enzo");
         ferrari.print();
+        ferrari.print("coisa");
 
     }
 }

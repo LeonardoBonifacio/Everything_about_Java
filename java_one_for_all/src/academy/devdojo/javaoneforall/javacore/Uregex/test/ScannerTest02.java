@@ -9,7 +9,7 @@ public class ScannerTest02 {
         Scanner scanner = new Scanner(text);// delimiter default is a blank Space
         scanner.useDelimiter(",");
         while (scanner.hasNext()) {// while there something in the next value after the delimiter
-            // basically here i'm separating this values in each tipe 
+            // basically here i'm separating this values in each type 
             if (scanner.hasNextInt()) {
                 int number = scanner.nextInt();
                 System.out.println("Int " + number);

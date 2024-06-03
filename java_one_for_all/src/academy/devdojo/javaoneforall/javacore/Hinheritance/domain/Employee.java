@@ -8,7 +8,7 @@ public class Employee extends Object {// Class Object is the root of the class h
     protected String socialSecurity;
     protected Address address;
     protected double salary;
-    // this new acces modifier(proctected) has two rule which are:
+    // this new access modifier(proctected) has two rule which are:
     // first rule:
     // all subclasses it doesn't matter where they are(packages), they can access
     // the attributes

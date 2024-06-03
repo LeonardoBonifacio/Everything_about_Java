@@ -20,7 +20,7 @@ public class RunTimeExceptionTest02 {
      */
     private static int division(int a , int b){// throws IOException
         // the throws keyword must be used for checked exceptions is most of the cases
-        // she throw one Excpetion for the method who is calling this method here(in this case main() method)
+        // she throw one Exception for the method who is calling this method here(in this case main() method)
         // if we want that main() method not worry of handle this excpetion, we can put the same keyword and the same throw
         // like this we can do not worry for put one block of try catch
         // in the main() method , passing a responsability of handle this exception for who's calling the main method

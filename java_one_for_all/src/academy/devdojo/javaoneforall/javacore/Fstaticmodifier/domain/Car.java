@@ -4,8 +4,8 @@ public class Car {
     private String name;
     private double maxSpeed;
     private static double speedLimit = 250;
-    // static is a keyword in java that you can add after the acces modifier or
-    // before, you cannot add after the type
+    // static is a keyword in java that you can add after the acces modifier 
+    // you cannot add after the type
     // this keyword set that the atribute, method or whatever you put, now not
     // belongs to the object of the class
     // now this belong to the class itself
@@ -44,7 +44,7 @@ public class Car {
     }
 
     public static double getSpeedLimit() {
-        // when we call static methods there is a change that there will be no objects at all
+        // when we call static methods there is a chance that there will be no objects at all
         // then we must call this atribute by the class level with the your name and not
         // with the keyword 'this'
         return Car.speedLimit;// this is call by the Classe because the keyword static that set which this

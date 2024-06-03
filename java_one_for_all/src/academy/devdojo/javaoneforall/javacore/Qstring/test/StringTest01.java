@@ -4,7 +4,8 @@ public class StringTest01 {
     public static void main(String[] args) {
         String name1 = "Leo";
         String name2 = "Leo";
-        // Strings are imutable the statement above is creating two new string
+        // Strings are imutable 
+        // The statement above are creating two new string
         // references in memory( Bonifácio, and Leo Bonifácio)
         // but the statemente above is not changing the string name1 itself
         name1.concat(" Bonifácio");

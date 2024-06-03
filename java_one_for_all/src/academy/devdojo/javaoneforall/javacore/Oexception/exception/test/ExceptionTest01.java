@@ -17,7 +17,7 @@ public class ExceptionTest01 {
         // the code until you handle
         // your code to treat the exceptions, here you have what we call as Checked
         // Exceptions
-        File file = new File("C:\\Users\\LUCIANO\\Desktop\\Java\\java_one_for_all\\folder\\test.txt");
+        File file = new File("C:\\Users\\bonil\\Desktop\\JAVA\\java_one_for_all\\folder\\teste.txt");
         try {
             boolean isCreated = file.createNewFile();
             System.out.println("File Created - > " + isCreated);

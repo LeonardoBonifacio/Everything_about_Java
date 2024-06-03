@@ -15,7 +15,7 @@ public class RunTimeExceptionTest01 {
         // And Unchecked Exceptions are exceptions that are under or it is a RunTimeException
         // RunTimeException are unchecked exceptions
         // Most of the time Unchecked Exceptions is a programmer developer's problem
-        // like calling a method of reference variable that doee have any object being referenced
+        // like calling a method of reference variable that does have any object being referenced
         // or NumberFormatException when you try do change a string to a number
         // Basically all this problems could be avoided if you as developer took the right measures
 
