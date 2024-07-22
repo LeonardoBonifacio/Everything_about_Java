@@ -13,6 +13,7 @@ public class EqualsTest01 {
 
         Smartphone s1 = new Smartphone("1BACN2", "Pixel");
         Smartphone s2 = new Smartphone("1BACN2", "Pixel");
+        
         System.out.println(s1.equals(s2));// returns true
         // // the equals default behavior of every class(without override this methos with other class that inheritance the Object Class)
         // // is comparing the references of where those objects are located

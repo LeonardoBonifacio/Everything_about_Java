@@ -24,6 +24,7 @@ public class Anime {
     // restrictive in fact , only less restrictive
     // try to have the same assignature when you overriding your methods to make
     // sure
+    
     public void setName(String name) {
         this.name = name;
     }

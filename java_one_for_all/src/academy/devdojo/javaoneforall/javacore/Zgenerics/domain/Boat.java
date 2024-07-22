@@ -3,6 +3,7 @@ package academy.devdojo.javaoneforall.javacore.Zgenerics.domain;
 import java.util.Objects;
 
 public class Boat implements Comparable<Boat> {
+    
     private String name;
 
     public Boat(String name) {

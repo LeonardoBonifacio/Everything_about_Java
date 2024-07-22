@@ -17,6 +17,7 @@ public class Smartphone extends Object{
     // if y.hashcode() == x.hashcode(), doens't mean that y.equals(x) == true
     // if you have x.equals(y) == false , you don't have to worry about hashcode
     // if y.hashcode() != x.hashcode() , so x.equals(y) should be false
+    
     @Override
     public int hashCode() {
         return this.serialnumber == null ? 0 : this.serialnumber.hashCode();

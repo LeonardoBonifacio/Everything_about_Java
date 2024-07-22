@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.javacore.Jfinalmodifier.test;
+ package academy.devdojo.javaoneforall.javacore.Jfinalmodifier.test;
 
 import academy.devdojo.javaoneforall.javacore.Jfinalmodifier.domain.Buyer;
 import academy.devdojo.javaoneforall.javacore.Jfinalmodifier.domain.Car;

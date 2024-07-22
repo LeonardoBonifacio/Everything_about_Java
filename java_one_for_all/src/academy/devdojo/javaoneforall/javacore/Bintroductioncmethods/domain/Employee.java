@@ -11,14 +11,14 @@ public class Employee {
         System.out.println("Name is:" + this.name);
         System.out.println("Age is: " + this.age);
         System.out.print("Salary are :");
-        if (salarys == null)
+        if (this.salarys == null)
             return;
         for (double salary : this.salarys) {
             System.out.print(" " + salary + " ");
         }
         System.out.println();
         System.out.println("-------------------------------------------------");
-        calculateAndPrintAverageSalaries(salarys);
+        calculateAndPrintAverageSalaries(this.salarys);
     }
 
     public void calculateAndPrintAverageSalaries(double[] salarys) {
@@ -33,7 +33,7 @@ public class Employee {
         System.out.println("-------------------------------------------------");
 
     }
-// getter and setter can actually be done automaticaly by ide, pressing in a
+    // getter and setter can actually be done automaticaly by ide, pressing in a
     // blank field crtl + espace and search for the set and get method which you
     // want
     public int getAge() {

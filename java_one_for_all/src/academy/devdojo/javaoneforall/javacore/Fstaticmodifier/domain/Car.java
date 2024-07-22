@@ -47,7 +47,7 @@ public class Car {
         // when we call static methods there is a chance that there will be no objects at all
         // then we must call this atribute by the class level with the your name and not
         // with the keyword 'this'
-        return Car.speedLimit;// this is call by the Classe because the keyword static that set which this
+        return Car.speedLimit;// this is call by the Class because the keyword static that set which this
                               // atribute belongs at a class itself
         // the keyword this is connected with instances of the class and not the class
         // itself

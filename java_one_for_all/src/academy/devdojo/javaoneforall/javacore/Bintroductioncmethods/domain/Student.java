@@ -21,4 +21,5 @@ public class Student {
         // reads this code the line 10,11 and 12 they are getting data directly from the
         // class attributes
     }
+    
 }

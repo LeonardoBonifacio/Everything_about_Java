@@ -30,6 +30,7 @@ public class BehaviorParameterizationTest02 {
         System.out.println(red);
         System.out.println(green);
         System.out.println(yearBefore);
+
     }
 
     private static List<Car> filter(List<Car> cars, CarPredicate predicate) {
