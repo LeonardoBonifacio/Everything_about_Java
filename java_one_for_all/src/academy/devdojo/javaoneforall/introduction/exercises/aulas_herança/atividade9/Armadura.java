@@ -1,16 +1,20 @@
-package academy.devdojo.javaoneforall.introduction.exercises.aulas_herança;
+package academy.devdojo.javaoneforall.introduction.exercises.aulas_herança.atividade9;
 
 public abstract class Armadura {
 
     private String nome;
     private int level;
     private int defesa;
+    private double preco;
 
-    public Armadura(String nome, int level, int defesa) {
+
+    public Armadura(String nome, int level, int defesa, double preco) {
         this.nome = nome;
         this.level = level;
         this.defesa = defesa;
+        this.preco = preco;
     }
+
 
     public String getNome() {
         return nome;
@@ -35,5 +39,14 @@ public abstract class Armadura {
     public void setDefesa(int defesa) {
         this.defesa = defesa;
     }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+    
+    public double getPreco() {
+        return preco;
+    }
+
 
 }
