@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises.KnightsProblem;
+package exercises.KnightsProblem;
 
 import java.util.*;
 

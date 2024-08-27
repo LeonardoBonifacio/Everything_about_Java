@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises;
+package exercises;
 
 public class Test {
     public static void main(String[] args) throws  InterruptedException{

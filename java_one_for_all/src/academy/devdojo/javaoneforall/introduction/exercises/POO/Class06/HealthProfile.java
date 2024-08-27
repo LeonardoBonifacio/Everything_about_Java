@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises.POO.Class06;
+package exercises.POO.Class06;
 
 public class HealthProfile {
     private String firstName;

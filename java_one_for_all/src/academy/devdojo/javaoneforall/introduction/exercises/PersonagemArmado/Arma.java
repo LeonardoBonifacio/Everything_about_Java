@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises.PersonagemArmado;
+package exercises.PersonagemArmado;
 
 public class Arma {
     private String nome;

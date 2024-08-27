@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.content;
+package content;
 
 public class Class05ConditionalStatements02 {
     // this is Class level Scope

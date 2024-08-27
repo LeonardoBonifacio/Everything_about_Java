@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises;
+package exercises;
 public class ConcatenationTest{
     public static void main(String[] args) {
     // Only testing concatenations between strings and numbers

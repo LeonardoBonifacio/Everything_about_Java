@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises.POO.Class03;
+package exercises.POO.Class03;
 
 public class EmployeeTest {
     public static void main(String[] args) {

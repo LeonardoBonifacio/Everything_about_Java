@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.content;
+package content;
 
 public class Class02PrimitiveTypes {
     // I can type 'psvm' so that i don't have that type the method main again and

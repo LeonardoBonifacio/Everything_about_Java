@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises;
+package exercises;
 
 public class QualityPoints {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises.Empresa;
+package exercises.Empresa;
 
 // a) Crie outra classe chamada de Departamento. O departamento representa os
 // setores de uma empresa: Recursos Humanos, Marketing, Financeiro etc. Essa classe terá

@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises.aulas_herança;
+package exercises.aulas_herança;
 
 public abstract class Funcionario {
     private String nome;

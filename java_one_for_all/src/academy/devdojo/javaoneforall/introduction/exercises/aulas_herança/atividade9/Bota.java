@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises.aulas_herança.atividade9;
+package exercises.aulas_herança.atividade9;
 
 public class Bota extends Armadura{
     private int moveSpeed;

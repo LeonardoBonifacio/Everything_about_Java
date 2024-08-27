@@ -1,6 +1,6 @@
-package academy.devdojo.javaoneforall.introduction.exercises.Empresa;
+package exercises.Empresa;
 
-
+import exercises.Empresa.Funcionario;
 
 public class EmpresaTest {
     public static void main(String[] args) {

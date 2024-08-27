@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises.Empresa;
+package exercises.Empresa;
 
 public class Funcionario {
     private String nome;

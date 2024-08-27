@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises;
+package exercises;
 
 public class IntegerValueOfCharacter {
     public static void main(String[] args) {

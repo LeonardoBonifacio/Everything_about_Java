@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises.POO.Class05;
+package exercises.POO.Class05;
 
 public class HeartRates {
     private String firstName;

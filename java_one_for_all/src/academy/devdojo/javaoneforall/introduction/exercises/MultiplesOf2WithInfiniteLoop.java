@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises;
+package exercises;
 
 public class MultiplesOf2WithInfiniteLoop {
     public static void main(String[] args) {

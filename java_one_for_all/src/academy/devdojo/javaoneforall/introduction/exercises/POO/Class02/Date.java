@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.introduction.exercises.POO.Class02;
+package exercises.POO.Class02;
 
 public class Date {
     private int month;
